@@ -1554,6 +1554,8 @@ cart empty
 
 
 
+
+
   </div>
 
    
@@ -2777,7 +2779,9 @@ if(index === 0){
 this.attention = true
       this.$store.commit("googleAddress", { googleAddress });
     },
-    cippaybutton() {
+
+
+cippaybutton() {
       this.checkForm()
       let self = this;
       this.getToken().then(function (transactionToken) {
@@ -2824,20 +2828,7 @@ console.log('transasction success')
                 self.doAnOrder(self.$store.state.storeCurrentOrderUpdateMbar,approvalData,null);
               }
 
-
-
-
     }
-
-
-
-
-
-
-
-
-
-          
           },
           onTransactionFailure: function (failureData) {
             console.log("Failure Data", failureData);
@@ -2851,7 +2842,7 @@ console.log('transasction success')
         });
       });
     },
-    getToken() {
+getToken() {
       let self = this;
       let dataToSend
    if(self.title === 'Mamnoon'){
@@ -2880,14 +2871,6 @@ console.log('transasction success')
           });
       });
     },
-
-
-
-
-
-
-
-
     addAddOnOne(mod, modifieritem) {
 
 
@@ -2931,26 +2914,6 @@ let updatedItems = this.currentItemModifierArray.filter(
        }
 
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 addAddOn(mod, modifieritem) {
 
 

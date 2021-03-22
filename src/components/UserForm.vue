@@ -33,6 +33,8 @@
 <br><br>
 <button class="sm-button" @click="updateDelivery = true">update delivery address</button>
 <br><br>
+
+        <button class="mt10 fw" style="margin-top:20px;" id="cip-pay-btn" @click="cippaybuttoncreditsave">credit save</button>
 </div>
 <br>
 <form @submit.prevent="checkForm" v-if="updateDelivery">
@@ -282,8 +284,96 @@ billingAddress: {
     },
 props: ['emailAddress'],
   methods: {
+    cippaybuttoncreditsave() {
+
+      let self = this;
+      this.getCreditSaveToken().then(function (transactionToken) {
+        emergepay.open({
+          transactionToken: transactionToken,
+          onTransactionSuccess: function (approvalData) {
+            // console.log("Approval Data", approvalData);
+            emergepay.close();
+
+console.log('transasction success')
+   if(self.title === 'Mamnoon'){
+
+              if(self.$store.state.storeCurrentOrderUpdateMamnoon.preorder === true){
+                self.scheduleAnOrder(self.$store.state.storeCurrentOrderUpdateMamnoon,approvalData,null);
+              }
+              
+              if(self.$store.state.storeCurrentOrderUpdateMamnoon.preorder === false){
+                self.doAnOrder(self.$store.state.storeCurrentOrderUpdateMamnoon,approvalData,null);
+              }
 
 
+
+    }else if(self.title === 'Mamnoon Street'){
+
+
+              if(self.$store.state.storeCurrentOrderUpdateStreet.preorder === true){
+                self.scheduleAnOrder(self.$store.state.storeCurrentOrderUpdateStreet,approvalData,null);
+              }
+              
+              if(self.$store.state.storeCurrentOrderUpdateStreet.preorder === false){
+                self.doAnOrder(self.$store.state.storeCurrentOrderUpdateStreet,approvalData,null);
+              }
+
+
+
+    }else if(self.title === 'Mbar'){
+
+
+              if(self.$store.state.storeCurrentOrderUpdateMbar.preorder === true){
+                self.scheduleAnOrder(self.$store.state.storeCurrentOrderUpdateMbar,approvalData,null);
+              }
+              
+              if(self.$store.state.storeCurrentOrderUpdateMbar.preorder === false){
+                self.doAnOrder(self.$store.state.storeCurrentOrderUpdateMbar,approvalData,null);
+              }
+
+    }
+          },
+          onTransactionFailure: function (failureData) {
+            console.log("Failure Data", failureData);
+
+            // console.log('transasction success')
+
+          },
+          onTransactionCancel: function () {
+            console.log("transaction cancelled!");
+          },
+        });
+      });
+    },
+    getCreditSaveToken() {
+      let self = this;
+      let dataToSend
+   if(self.title === 'Mamnoon'){
+      dataToSend = self.$store.state.storeCurrentOrderUpdateMamnoon
+    }else if(self.title === 'Mamnoon Street'){
+      dataToSend = self.$store.state.storeCurrentOrderUpdateStreet
+    }else if(self.title === 'Mbar'){
+      dataToSend = self.$store.state.storeCurrentOrderUpdateMbar
+  }
+
+      return new Promise(function (resolve, reject) {
+        $.ajax({
+          // url: "https://young-hamlet-03679.herokuapp.com/order/start-credit-save",
+          url: "http://localhost:4000/order/start-credit-save",
+          type: "POST",
+          dataType: "json",
+          contentType: "application/json",
+          data: JSON.stringify(dataToSend),
+        })
+          .done(function (data) {
+            if (data.transactionToken) resolve(data.transactionToken);
+            else reject("Error getting transaction token");
+          })
+          .fail(function (err) {
+            reject(err);
+          });
+      });
+    },
     async checkFormBilling() {
           this.updateBilling = false
         try {
