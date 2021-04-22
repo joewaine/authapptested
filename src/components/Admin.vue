@@ -1146,7 +1146,7 @@ this.attention = true
 
       return new Promise(function (resolve, reject) {
         $.ajax({
-          url: "https://shielded-crag-35213.herokuapp.com/order/start-transaction",
+          url: "https://enigmatic-savannah-11908.herokuapp.com/order/start-transaction",
           // url: "http://localhost:4000/order/start-transaction",
           type: "POST",
           dataType: "json",

@@ -441,7 +441,7 @@ console.log('store card name and information')
 
       return new Promise(function (resolve, reject) {
         $.ajax({
-          url: "https://shielded-crag-35213.herokuapp.com/order/start-credit-save",
+          url: "https://enigmatic-savannah-11908.herokuapp.com/order/start-credit-save",
           // url: "http://localhost:4000/order/start-credit-save",
           type: "POST",
           dataType: "json",
