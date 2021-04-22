@@ -3410,7 +3410,7 @@ console.log('transasction success')
     }else if(self.title === 'Mbar'){
       dataToSend = self.$store.state.storeCurrentOrderUpdateMbar
   }
-
+// added 
       return new Promise(function (resolve, reject) {
         $.ajax({
           url: "https://enigmatic-savannah-11908.herokuapp.com/order/start-transaction",
@@ -4200,12 +4200,13 @@ this.setTip(0)
   mounted() {
 
  
-
+   if(this.$store.state.loggedIn){
 
 
 
 
  this.getCreditCards()
+   }
 // if(this.valid){
   // console.log('open now so filter to what is available now')
   // this.createSingle()
