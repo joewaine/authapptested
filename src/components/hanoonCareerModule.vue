@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="hanoonContents">
     <div class="holderHanoon">
       <div class="col-md-4">
         <div class="logoHanoon" v-html="this.pageData[4].logo_svg"></div>

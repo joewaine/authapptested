@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="streetContents">
     <div class="holderStreet">
       <div class="col-md-4">
         <div class="logoStreet" v-html="this.pageData[3].logo_svg"></div>

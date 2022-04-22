@@ -1,6 +1,9 @@
 <template>
   <div>
     <Nav3 />
+    <div class="col-md-8 m-auto p-auto">
+      <Logos />
+    </div>
     <div class="main-content">
       <h5>work for mama</h5>
       <p>
@@ -14,32 +17,28 @@
       <p>
         scroll below to see current openings.
       </p>
-      
     </div>
-      <div class="col-md-8 m-auto p-auto">
-        <Logos/>
-      </div>
-      <div>
-        <Hanoon/>
-      </div>
-      <div>
-        <Manna/>
-      </div>
-      <div>
-        <Mbar/>
-      </div>
-      <div>
-        <Street/>
-      </div>
-      <div>
-        <Mamnoon/>
-      </div>
-      <div>
-        <Anar/>
-      </div>
-      <div>
-        <NoOpenings/>
-      </div>
+    <div id="hanoon">
+      <Hanoon />
+    </div>
+    <div>
+      <Manna />
+    </div>
+    <div id="mbar">
+      <Mbar />
+    </div>
+    <div>
+      <Street />
+    </div>
+    <div>
+      <Mamnoon />
+    </div>
+    <div>
+      <Anar />
+    </div>
+    <div>
+      <NoOpenings />
+    </div>
     <!-- spot for image -->
     <footer>
       <GlobalFooter />
@@ -50,13 +49,13 @@
 import Nav3 from "@/components/Nav3";
 import GlobalFooter from "@/components/GlobalFooter";
 import Logos from "@/components/Logos";
-import Hanoon from '@/components/hanoonCareerModule.vue'
-import Manna from '@/components/mannaCareerModule.vue'
-import Mbar from '@/components/mbarCareerModule.vue'
-import Street from '@/components/streetCareerModule.vue'
-import Mamnoon from '@/components/mamnoonCareerModule.vue'
-import Anar from '@/components/anarCareerModule.vue'
-import NoOpenings from '@/components/noOpeningsModule.vue'
+import Hanoon from "@/components/hanoonCareerModule.vue";
+import Manna from "@/components/mannaCareerModule.vue";
+import Mbar from "@/components/mbarCareerModule.vue";
+import Street from "@/components/streetCareerModule.vue";
+import Mamnoon from "@/components/mamnoonCareerModule.vue";
+import Anar from "@/components/anarCareerModule.vue";
+import NoOpenings from "@/components/noOpeningsModule.vue";
 export default {
   components: {
     Nav3,
@@ -68,9 +67,8 @@ export default {
     Street,
     Mamnoon,
     Anar,
-    NoOpenings
+    NoOpenings,
   },
-  
 };
 </script>
 

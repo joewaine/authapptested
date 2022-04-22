@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="noOpenContents">
     <div class="bg">
       <div class="col-md-12">
         <div class='titleSection'>

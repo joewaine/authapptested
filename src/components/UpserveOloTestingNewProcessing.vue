@@ -1176,9 +1176,9 @@ add
               <div class="toggleLr hide-on-desktop" v-if="oloAvailable">
                 <div>
                   <button v-if="!packageLink" class="oloButton" @click="preOrderToggle(false)" :class="{ selected: !preOrderToggleState }">get it now</button></div> 
-                <div>
+                <!-- <div>
                   <button class="oloButton" @click="preOrderToggle(true)" :class="{ selected: preOrderToggleState }">preorder</button> 
-                  </div> 
+                  </div>  -->
               </div>
               </template>
               <template v-else>
@@ -1195,8 +1195,6 @@ add
                   <div class="rightDropdown" style="width: 100%;padding: 0 0 0px 0;" v-if="selectedDate && selectedDate !== null">
                                <v-select v-if="rendered && !packageLink" :options="selectedDate.timeslots" label="timelabel" placeholder="Select Time" :selectable="x => x.time > Date.now() + 1500000" v-model="selectedTime"></v-select>
                                <v-select v-else :options="selectedDate.timeslots" label="timelabel" placeholder="Select Time" v-model="selectedTime" :selectable="x => x.time > Date.now() + 1500000" ></v-select>
-                
-                                    
 
                   </div>
                 </template>
@@ -1225,7 +1223,7 @@ add
 
 
 
-<button v-if="panelShow === 'customerInfo'" @click="panelShowChoose('yourOrder')" class="edit-order-button"><span v-if="currentOrder.preorder === true">edit pre order</span><span v-else>edit order</span></button>
+<!-- <button v-if="panelShow === 'customerInfo'" @click="panelShowChoose('yourOrder')" class="edit-order-button"><span v-if="currentOrder.preorder === true">edit pre order</span><span v-else>edit order</span></button> -->
 
 <template v-if="this.currentOrder.charges && this.currentOrder.charges.items.length > 0">
   <br>
@@ -1236,7 +1234,7 @@ add
 <template v-if="valid">
 <template v-if="preOrderToggleState">
   <div style="margin-top:15px;">
-<v-select v-if="rendered" :options="dropDownDays" label="dateData" placeholder="Select Day" v-model="selectedDate" :selectable="x => !x.closed"></v-select>
+<!-- <v-select v-if="rendered" :options="dropDownDays" label="dateData" placeholder="Select Day" v-model="selectedDate" :selectable="x => !x.closed"></v-select> -->
 </div>
 <div style="margin-top:15px;" v-if="selectedDate && selectedDate !== null">
              <v-select v-if="rendered && !packageLink" :options="selectedDate.timeslots" label="timelabel" placeholder="Select Time" :selectable="x => x.time > Date.now() + 1500000" v-model="selectedTime"></v-select>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="mamnoonContents">
     <div class="holderMamnoon">
       <div class="col-md-4">
         <div class="logoMamnoon" v-html="this.pageData[1].logo_svg"></div>

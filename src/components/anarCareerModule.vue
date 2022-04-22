@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="anarContents">
     <div class="holderAnar">
       <div class="col-md-4">
         <div class="logoAnar" v-html="this.pageData[2].logo_svg"></div>

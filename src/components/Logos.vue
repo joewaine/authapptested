@@ -1,7 +1,7 @@
 <template>
   <div class="logoRow" v-if="$store && $store.state">
     <div class="logosInline" v-for="restaurant in this.logos">
-      <div class="displayInline" v-html="restaurant"></div>
+        <div class="displayInline" v-html="restaurant[0]"></div>
     </div>
   </div>
 </template>
@@ -18,13 +18,13 @@ export default {
     getLogos() {
       this.pageData = this.$store.state.pageData[0].restaurant_repeater;
       console.log(`pageData`, this.pageData);
-      this.logos.push(this.pageData[4].logo_svg);
-      this.logos.push(this.pageData[5].logo_svg);
-      this.logos.push(this.pageData[0].logo_svg);
-      this.logos.push(this.pageData[3].logo_svg);
-      this.logos.push(this.pageData[1].logo_svg);
-      this.logos.push(this.pageData[2].logo_svg);
-      console.log('this.logos', this.logos)
+      this.logos.push([this.pageData[4].logo_svg, "/#hannon"]);
+      this.logos.push([this.pageData[5].logo_svg, "#manna"]);
+      this.logos.push([this.pageData[0].logo_svg, "/#mbar"]);
+      this.logos.push([this.pageData[3].logo_svg, "#street"]);
+      this.logos.push([this.pageData[1].logo_svg, "#mamnoon"]);
+      this.logos.push([this.pageData[2].logo_svg, "#anar"]);
+      console.log("this.logos", this.logos);
     },
   },
   mounted() {
@@ -49,8 +49,12 @@ export default {
   }
 }
 .displayInline svg {
-  height: 150px;
-  width: 100px;
+  height: 200px;
+  width: 150px;
+  @media only screen and (max-width: 768px) {
+    height: 150px;
+    width: 100px;
+  }
 }
 
 .logoRow {
@@ -58,12 +62,12 @@ export default {
   justify-content: space-around;
   align-content: normal;
   width: 100%;
-  margin-top: 35px;
+  margin-top: 15vh;
   margin-bottom: 35px;
   @media only screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 </style>

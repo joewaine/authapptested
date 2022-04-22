@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="mbarContents">
     <div class="holderMbar">
       <div class="col-md-4">
         <div class="logoMbar" v-html="this.pageData[0].logo_svg"></div>
