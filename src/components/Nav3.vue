@@ -182,7 +182,7 @@
                   </li>
                 </div>
 
-                <div class="inline-link">
+                <!-- <div class="inline-link">
                   <li>
                     <a
                       target="_blank"
@@ -191,7 +191,7 @@
                       giftcards
                     </a>
                   </li>
-                </div>
+                </div>  -->
                 <div class="inline-link">
                   <li>
                     <router-link to="/careers">
@@ -255,7 +255,7 @@
               </li>
             </div>
 
-            <div class="inline-link">
+            <!-- <div class="inline-link">
               <li>
                 <a
                   target="_blank"
@@ -264,7 +264,7 @@
                   giftcards
                 </a>
               </li>
-            </div>
+            </div> -->
           </ul>
         </div>
       </nav>
@@ -317,14 +317,14 @@
                 </router-link>
               </li>
 
-              <li>
+              <!-- <li>
                 <a
                   target="_blank"
                   href="https://ecommerce.custcon.com/Purchase/Select?c=364cfc03-d428-44bf-b814-1efbdcaed08d"
                 >
                   giftcards
                 </a>
-              </li>
+              </li> -->
               <li>
                 <router-link to="/careers" class="scrollactive-item nav-item">
                   careers
