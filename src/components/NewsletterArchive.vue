@@ -34,10 +34,7 @@ for (var i = 0; i < elements.length; i++) {
 
 
 <style lang="scss">
-.pad {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+
 
 
 #gist {

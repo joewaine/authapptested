@@ -51,10 +51,7 @@ button[disabled="true"] {
 }
 
 
-.closeModal {
-  opacity: 1;
-  cursor: pointer;
-}
+
 
 .order-sidebar {
   padding-left: 0;
@@ -79,9 +76,7 @@ button[disabled="true"] {
   }
 }
 
-.display-block {
-  display: block;
-}
+
 
 h2 {
   cursor: pointer;
@@ -205,19 +200,9 @@ form textarea,
   overflow: hidden;
 }
 
-.grey-bg {
-  height: 140px;
-}
 
-.filtree-half {
-  width: calc(50% - 0px);
-  float: left;
-  height: 140px;
-  background: transparent;
-  padding: 5px;
-  overflow: hidden;
-  margin-bottom: 5px;
-}
+
+
 
 .filtree-full {
   width: calc(100% - 0px);
@@ -229,17 +214,7 @@ form textarea,
   margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-  .filtree-half {
-    width: calc(100% - 0px);
-    float: left;
-    height: 140px;
-    background: transparent;
-    padding: 5px;
-    overflow: hidden;
-    margin-bottom: 5px;
-  }
-}
+
 
 .content-box {
   // margin: 10px;
@@ -250,8 +225,7 @@ form textarea,
   padding: 10px;
   // width: 100%;
 
-  .name {
-  }
+ 
 
   .food-description {
     font-size: 0.8rem;
@@ -298,10 +272,6 @@ form textarea,
   font-weight: 600;
 }
 
-.no-lr-margin {
-  margin-left: 0;
-  margin-right: 0;
-}
 
 .expand-contract {
   display: none;
@@ -409,17 +379,11 @@ form textarea,
   font-weight: 600;
 }
 
-.pt50 {
-  padding-top: 50px;
-}
 
-.pt20 {
-  padding-top: 20px;
-}
 
-.mt10 {
-  margin-top: 10px;
-}
+
+
+
 
 .item-description-p {
   margin-top: 15px;
@@ -543,62 +507,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .backgroundImage {
-    background-position: center center;
-    background-size: cover;
 
-    // height: 150px;
-    // background-size: 129%;
-  }
-
-  .inline-block {
-    display: inline-block;
-    width: 100%;
-  }
-
-  .yellow-bg,
-  .yellow-bg-test {
-    background: #fff367;
-    width: 100%;
-    display: inherit;
-    height: 150px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-
-    &:hover {
-      opacity: 0.7;
-    }
-  }
-
-  .half-width2left {
-    width: 65%;
-    float: left;
-    height: 150px;
-    overflow: hidden;
-  }
-
-  .half-width2right {
-    width: 35%;
-    float: left;
-    height: 150px;
-    overflow: hidden;
-  }
-
-  .grey-bg {
-    height: 150px;
-  }
-
-  .filtree-half {
-    width: calc(100%);
-    float: left;
-    height: 150px;
-    background: transparent;
-    padding: 5px;
-    overflow: hidden;
-    margin-bottom: 5px;
-  }
-}
 
 input.formatted {
   border: 1px solid #b7b7b7;
@@ -614,20 +523,11 @@ span.attention {
   color: $nadi-red-color;
 }
 
-ul.no-left-pad {
-  padding-left: 0;
-}
 
-.mt10 {
-  margin-top: 10px;
-}
 
-.small-message {
-  color: $nadi-red-color;
-  color: #f58e58;
-  font-size: 0.9rem;
-  font-style: italic;
-}
+
+
+
 
 .smblk {
   color: #000;
@@ -767,9 +667,7 @@ form hr {
   margin-top: 8px;
 }
 
-.mb20 {
-  margin-bottom: 20px;
-}
+
 
 .pt20 {
   padding: 20px 0;

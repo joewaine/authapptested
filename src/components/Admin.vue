@@ -40,7 +40,7 @@
                     <template v-if="1 === 1">
                       <template v-if="1 === 1">
                         <div
-                          class="col-6 col-md-3 shop-item no-lr-pad"
+                          class="col-6 col-md-3 no-lr-pad"
                           style="display: contents;"
                         >
                           <template v-for="serve in upserveList">

@@ -410,9 +410,7 @@ select {
   // z-index: 1000;
   z-index: 80;
 
-  .relative {
-    position: relative;
-  }
+  
   border-bottom: 1px solid #ddd;
   @media only screen and (max-width: 1080px) {
     top: 92px;
@@ -444,35 +442,17 @@ select {
 
 .toggleLr.hide-on-desktop {
   display: none;
-}
-
-@media only screen and (max-width: 992px) {
-  .toggleLr.hide-on-desktop {
+  @media only screen and (max-width: 992px) {
     display: flow-root;
   }
 }
+
+
 
 @media only screen and (min-width: 992px) {
   .hide-on-desktop-2 {
     display: none;
   }
-}
-
-// button.selected{
-//   box-sizing: border-box;
-// color: #666666 !important;
-// }
-
-.mb6 {
-  margin-bottom: 6px;
-}
-
-.mb10 {
-  margin-bottom: 10px;
-}
-
-.mb16 {
-  margin-bottom: 16px;
 }
 
 .red-text {
@@ -482,10 +462,6 @@ select {
   color: #666666;
 }
 
-.no-lr-pad {
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .leftDropdown {
   cursor: pointer;
@@ -550,8 +526,7 @@ select {
     margin-bottom: 10px;
   }
 
-  #upserveolo .online-menu,
-  .no-lr-pad {
+  #upserveolo .online-menu {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -972,15 +947,12 @@ background: white;
 color: #999;
 
 
-
-
     &.selected {
       background-color: #f05d5b;
       color: #ffffff;
       padding: 5px 10px;
       border-radius: 0 4px 4px 0;
       border: 2px solid #f05d5b;
-
       background-color: rgba(240, 93, 91, 0.2901960784);
       color: #f05d5b;
 border-right:  2px solid #f05d5b;

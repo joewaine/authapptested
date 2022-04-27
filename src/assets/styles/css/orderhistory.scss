@@ -1,6 +1,4 @@
-.fl-right {
-  float: right;
-}
+
 
 .menu-line-testing {
   border-bottom: 0 solid #ddd;
@@ -33,19 +31,9 @@
       background: transparent;
     }
   }
-  .half-width2left {
-    width: 65%;
-    float: left;
-    height: 140px;
-    overflow: hidden;
-  }
+  
 
-  .half-width2right {
-    width: 35%;
-    float: left;
-    height: 140px;
-    overflow: hidden;
-  }
+  
 
   .content-box .name,
   .content-box .food-description,
@@ -75,14 +63,9 @@
     top: 20px;
   }
 
-  table td div {
-    height: 100%;
-  }
+  
 
-  .w100 {
-    width: 100%;
-    display: inline-table;
-  }
+
 
   .filtree-full-testing-favorites {
     width: calc(33% - 0px);
@@ -95,22 +78,7 @@
     padding-bottom: 5px;
   }
 
-  .w100 {
-    td.sm-cell {
-      width: 5%;
-      // display: inline-block;
-    }
 
-    td.lg-cell {
-      width: 25%;
-      // display: inline-block;
-    }
-
-    td {
-      width: 15%;
-      // display: inline-block;
-    }
-  }
 
   .content-box .name {
     font-size: 0.9rem;
@@ -210,31 +178,11 @@ ul.order-items {
   border-bottom: 0;
 }
 
-.w-20 {
-  width: 20% !important;
-}
 
-.w-5 {
-  width: 5% !important;
-}
 
-.small-message {
-  color: $nadi-red-color;
-  color: #f58e58;
-  font-size: 0.9rem;
-  font-style: italic;
 
-  &.grey {
-    color: #343a40;
-    font-size: 0.8rem;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .w-20 {
-    width: 30% !important;
-  }
-}
+
 
 .orderDetail {
   display: none;

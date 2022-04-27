@@ -23,15 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-.mamnoon {
-  padding-top: 132px;
-}
 
-@media only screen and (max-width: 992px) {
-  .mamnoon {
-    padding-top: 112px;
-  }
-}
 
 h1 {
   color: $nadi-red-color;
@@ -39,44 +31,13 @@ h1 {
   margin: 30px auto;
 }
 
-.pad {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
-.pad-sm {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
 
-.mb20 {
-  margin-bottom: 20px;
-}
 
-.ff {
-  h2 {
-    color: $nadi-red-color;
-  }
 
-  h3 {
-    font-style: italic;
-    font-size: 1em;
-    font-weight: bold;
-  }
-
-  p {
-  }
-
-  a {
-    color: $nadi-red-color;
-    text-decoration: underline;
-  }
-}
 
 @media only screen and (max-width: 992px) {
-  .ff {
-    padding-top: 0;
-  }
+
 
   .list-of-links {
     margin-top: 40px;

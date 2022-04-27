@@ -41,17 +41,18 @@
 ul#menu {
   margin: -4px auto 0;
   padding-left: 0;
-}
 
-ul#menu li {
-  display: inline;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  // font-size: 20px;
-  font-size: 16px;
-  text-align: left;
-  padding: 0 10px;
-  color: #ffffff;
+  li {
+    display: inline;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    // font-size: 20px;
+    font-size: 16px;
+    text-align: left;
+    padding: 0 10px;
+    color: #ffffff;
+  }
+
 }
 
 ul#menu.mobile-menu li {

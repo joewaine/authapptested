@@ -74,9 +74,6 @@ body {
 h4.error {
   color: red;
 }
-.mb-80 {
-  margin-bottom: 80px;
-}
 
 .is-fullheight,
 .familymeal,
@@ -89,10 +86,6 @@ h4.error {
 
 .position-relative {
   position: relative;
-}
-
-.mb-80 {
-  margin-bottom: 80px;
 }
 
 .sm-button {
@@ -358,42 +351,6 @@ h4.error {
     overflow: hidden;
   }
 
-  .half-width2left {
-    width: 65%;
-    float: left;
-    height: 140px;
-    overflow: hidden;
-  }
-
-  .half-width2right {
-    width: 35%;
-    float: left;
-    height: 140px;
-    overflow: hidden;
-  }
-
-  .grey-bg {
-    height: 140px;
-  }
-
-  .filtree-half {
-    width: calc(50% - 0px);
-    float: left;
-    height: 140px;
-    background: transparent;
-    padding: 5px;
-    overflow: hidden;
-    margin-bottom: 5px;
-  }
-
-  .filtree-full {
-    width: calc(100% - 0px);
-    float: left;
-    height: 140px;
-    background: transparent;
-    padding: 5px;
-    overflow: hidden;
-  }
 
   .filtree-full-testing {
     width: calc(50% - 0px);
@@ -413,17 +370,7 @@ h4.error {
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .filtree-half {
-      width: calc(100% - 0px);
-      float: left;
-      height: 140px;
-      background: transparent;
-      padding: 5px;
-      overflow: hidden;
-      margin-bottom: 5px;
-    }
-  }
+
 
   .content-box {
     // margin: 10px;
@@ -492,10 +439,6 @@ h4.error {
     font-weight: 600;
   }
 
-  .no-lr-margin {
-    margin-left: 0;
-    margin-right: 0;
-  }
 
   .expand-contract {
     display: none;
@@ -692,9 +635,6 @@ h4.error {
     padding-top: 20px;
   }
 
-  .mt10 {
-    margin-top: 10px;
-  }
 
   .item-description-p {
     margin-top: 15px;
@@ -914,15 +854,7 @@ h4.error {
       height: 150px;
     }
 
-    .filtree-half {
-      width: calc(100%);
-      float: left;
-      height: 150px;
-      background: transparent;
-      padding: 5px;
-      overflow: hidden;
-      margin-bottom: 5px;
-    }
+
   }
 
   input.formatted {
@@ -943,21 +875,8 @@ h4.error {
     padding-left: 0;
   }
 
-  .mt10 {
-    margin-top: 10px;
-  }
 
-  .small-message {
-    color: $nadi-red-color;
-    //color: #f58e58;
-    font-size: 0.9rem;
-    font-style: italic;
 
-    &.grey {
-      color: #343a40;
-      font-size: 0.8rem;
-    }
-  }
 
   .smblk {
     color: #000;
@@ -1262,7 +1181,6 @@ h4.error {
   }
 
   @media only screen and (max-width: 768px) {
-    .filtree-full,
     .filtree-full-testing,
     .half-width2right,
     .half-width2left,
@@ -1306,7 +1224,7 @@ h4.error {
     // display: none !important;
   }
 
-  #upserveolo .filtree-full,
+
   #upserveolo .filtree-full-testing {
     height: 140px !important;
   }
@@ -1318,7 +1236,7 @@ h4.error {
 }
 
 @media only screen and (max-width: 992px) {
-  #upserveolo .filtree-full,
+
   #upserveolo .filtree-full-testing {
     height: 140px !important;
 
@@ -1481,13 +1399,12 @@ input.custom-tip-button {
 
 .hide-on-desktop {
   display: none;
-}
-
-@media only screen and (max-width: 1080px) {
-  .hide-on-desktop {
-    display: flow-root;
+  @media only screen and (max-width: 1080px) {
+display: flow-root;
   }
 }
+
+
 
 @media only screen and (max-width: 992px) {
   #upserveolo .box-inner {
@@ -1524,10 +1441,6 @@ input.custom-tip-button {
   background: #eee;
 }
 
-.no-lr-margin {
-  margin-left: 0;
-  margin-right: 0;
-}
 
 .is-fullheight.less-left-right [id^="carousel_prev_"] {
   left: 30%;
@@ -2108,9 +2021,7 @@ input.custom-tip-button {
   padding: 28px 0;
 }
 
-.mb20 {
-  margin-bottom: 20px;
-}
+
 
 .mb20mobile {
 }
@@ -2128,9 +2039,7 @@ input.custom-tip-button {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.pt180 {
-  padding-top: 180px;
-}
+
 .pt140 {
   padding-top: 140px;
 }

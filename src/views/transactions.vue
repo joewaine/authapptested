@@ -30,10 +30,3 @@ export default {
 };
 </script>
 
-<style>
-.profile{
-    padding-top: 120px;
-        padding-top: 150px;
-    padding-bottom: 120px;
-}
-</style>

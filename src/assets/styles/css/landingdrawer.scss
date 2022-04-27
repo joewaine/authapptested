@@ -18,24 +18,9 @@
   }
 }
 
-.pt180 {
-  padding-top: 180px;
-}
 
-@media only screen and (max-width: 1080px) {
-  .pt180 {
-    padding-top: 0px;
-  }
 
-  .nav-acc-header {
-    // padding-top: 90px;
-    padding-top: 60px;
-    transition: padding 0.5s ease;
-    &.morePadding {
-      padding-top: 250px;
-    }
-  }
-}
+
 
 @media only screen and (max-width: 1080px) {
   .container.mt-5 {

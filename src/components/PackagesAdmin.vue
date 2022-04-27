@@ -4,14 +4,9 @@
  <button class="btn-nadi fl-right" @click="toggleMamnoonMenu()">toggle menu</button>
   <h1 class="red">{{pageTitle}} Packages</h1>  
 
-
-
-
-
 <!--
   {{packageAdd}} -->
   <hr>
-
 
 
 <template v-if="pageTitle === 'Mamnoon'">

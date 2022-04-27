@@ -44,6 +44,7 @@ module.exports = {
         prependData: `
           @import "@/assets/styles/_variables.scss";
           @import "@/assets/styles/_classes.scss";
+          @import "@/assets/styles/_globals.scss";
         `
       }
     }

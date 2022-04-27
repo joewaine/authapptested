@@ -220,10 +220,25 @@ status: <b>ticket closed</b>
           </li>
         </ul>
 
+
+
+
+<!--
+<u @click.once="issueFixedAmountReturn(loadedorderRendered.payInfo.uniqueTransId,percentRefundAmount,loadedorderRendered._id)">
+refund this percent amount: {{percentRefundAmount}}
+</u>-->
+
+
+
+<u @click="issueFixedAmountReturn(loadedorderRendered.payInfo.uniqueTransId,loadedorderRendered.payInfo.amountTipped,loadedorderRendered._id,true)" v-if="!loadedorderRendered.tipRefunded && loadedorderRendered.payInfo.amountTipped > -1">refund tip amount {{loadedorderRendered.payInfo.amountTipped}}</u>
+<br>
+<span v-if="loadedorderRendered.tipRefunded === true">tip has been refunded</span>
         <div v-if="loadedorderRendered.partialFixedRefund">
         partial fixed refund has been processed
         </div>
   <br>
+
+{{loadedorderRendered}}
 
 <!--
 refund amount fixed:<input v-model="refundAmountFixed" />
@@ -393,7 +408,9 @@ return amountToFix.toFixed(2);
 issueFixedAmountReturn(
       uniqueTransIdString,
       amount,
-      id) {
+      id,
+      isTipRefund,
+      refundAmount) {
 
       let amountToSend = amount.toString();
 
@@ -403,10 +420,16 @@ issueFixedAmountReturn(
         .post("/order/issue-tokenized-return", {
           uniqueTransId: uniqueTransIdString,
           amount: amountToSend,
+          refundAmount: refundAmount
         })
         .then((response) => {
         
             this.partialRefundTrue(id);
+
+            if(isTipRefund){
+              this.tipRefundTrue(id);
+            }
+
 
      
         })
@@ -420,6 +443,20 @@ issueFixedAmountReturn(
          let self = this;
       this.$http
         .post(`/order/partial-refund-true/${id}`)
+        .then((response) => {
+          console.log(response);
+    self.updateLoadedOrder(self.order._id);
+        })
+        .catch((e) => {
+          // this.errors.push(e);
+          console.log("errors");
+          console.log(e);
+        });
+    },
+    tipRefundTrue(id) {
+         let self = this;
+      this.$http
+        .post(`/order/tip-refund-true/${id}`)
         .then((response) => {
           console.log(response);
     self.updateLoadedOrder(self.order._id);

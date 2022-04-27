@@ -15,16 +15,3 @@ export default {
 };
 </script>
 
-<style>
-.mamnoon{
-  padding-top: 132px;
-}
-
-@media only screen and (max-width: 992px) {
-  .mamnoon{
-    padding-top: 112px;
-}
-
-}
-
-</style>
