@@ -273,5 +273,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/styles/css/restaurants.scss";
+  @import "@/assets/styles/css/restaurants.scss";
 </style>

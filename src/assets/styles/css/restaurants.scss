@@ -16,14 +16,6 @@ h1 {
   margin: 30px auto;
 }
 
-
-
-
-
-
-
-
-
 .ff h2 {
   text-transform: lowercase;
   margin-bottom: 24px;
@@ -39,20 +31,7 @@ p.list-of-links {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
   .restaurantBox {
     background: white;
     margin-bottom: 50px;
@@ -61,13 +40,12 @@ p.list-of-links {
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .restaurantBox {
     height: auto !important;
   }
 
-
-  .bottomButton{
+  .bottomButton {
     width: 100%;
     font-size: 18px !important;
     margin: 16px 24px 0 0 !important;
@@ -75,13 +53,8 @@ p.list-of-links {
 
   .bottomLinks {
     padding-left: 0px !important;
+  }
 }
-
-}
-
-
-
-
 
 .restaurantBox {
   background: white;
@@ -101,11 +74,8 @@ p.list-of-links {
     border-radius: 10px 10px 0 0;
 
     @media only screen and (max-width: 768px) {
-      height: 220px;
+      height: 320px;
     }
-
-
-
   }
 }
 
@@ -113,11 +83,8 @@ p.list-of-links {
   padding: 20px 20px 20px;
 
   @media only screen and (max-width: 768px) {
-
     padding: 10px 15px 20px;
   }
-
-
 }
 
 .restaurantName {
@@ -158,9 +125,8 @@ p.list-of-links {
 
 .hours {
   display: block;
-  
 }
-.hours:nth-of-type(even){
+.hours:nth-of-type(even) {
   margin-top: 10px;
 }
 
@@ -220,49 +186,39 @@ p.list-of-links {
     // background: pink;
     left: 10px;
     @media only screen and (max-width: 768px) {
-    left: 2px;
+      left: 2px;
     }
-
   }
-  
 
-
-
-@media only screen and (max-width: 768px) {
-  padding-left: 40px;
-}
-
-
+  @media only screen and (max-width: 768px) {
+    padding-left: 40px;
+  }
 }
 
 .imgBox {
   color: transparent;
 }
 
-
-.imgBoxRelative{
+.imgBoxRelative {
   position: relative;
 
-.restaurantLogo{
-  width: 40%;
-  top: 50%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  .restaurantLogo {
+    width: 40%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
-}
-
-
-.linkBlack{
-  color: black; 
-  &:hover{
+.linkBlack {
+  color: black;
+  &:hover {
     color: black;
   }
 }
 
-
-.padIn{
+.padIn {
   padding: 0 10px;
   margin-bottom: 10px;
 }
