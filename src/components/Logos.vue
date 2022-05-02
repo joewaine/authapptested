@@ -1,7 +1,7 @@
 <template>
-  <div class="logoRow" v-if="$store && $store.state">
-    <div class="logosInline" v-for="restaurant in this.logos">
-        <div class="displayInline" v-html="restaurant[0]"></div>
+  <div class="careerLogoRow" v-if="$store && $store.state">
+    <div class="careerLogosInline" v-for="restaurant in this.logos">
+        <div class="careerDisplayInline" v-html="restaurant[0]"></div>
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.logosInline {
+.careerLogosInline {
   width: 100%;
   margin-left: 2vw;
   @media only screen and (max-width: 1080px) {
@@ -42,13 +42,13 @@ export default {
   }
 }
 
-.displayInline {
+.careerDisplayInline {
   display: inline-block;
   @media only screen and (max-width: 768px) {
     display: block;
   }
 }
-.displayInline svg {
+.careerDisplayInline svg {
   height: 200px;
   width: 150px;
   @media only screen and (max-width: 768px) {
@@ -57,7 +57,7 @@ export default {
   }
 }
 
-.logoRow {
+.careerLogoRow {
   display: flex;
   justify-content: space-around;
   align-content: normal;

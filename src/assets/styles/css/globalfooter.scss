@@ -42,30 +42,28 @@ footer ul li {
   position: relative;
   padding: 70px 0 110px;
   padding: 100px 0 110px;
-}
 
-.beta {
-  position: absolute;
-  width: 100%;
-  background: white;
-  color: $nadi-red-color;
-  top: 0;
-  z-index: 1000;
-  padding: 5px;
-
-  font-size: 20px;
-
-  @media only screen and (max-width: 1080px) {
+  .beta {
+    border-top: 1px solid #eee;
+    position: absolute;
     width: 100%;
-    font-size: 14px;
-  }
-
-  text-align: center;
-  @media only screen and (max-width: 640px) {
-    font-size: 14px;
+    background: white;
+    color: $nadi-red-color;
+    top: 0;
+    z-index: 1000;
+    padding: 5px;
+    font-size: 20px;
+    @media only screen and (max-width: 1080px) {
+      width: 100%;
+      font-size: 14px;
+    }
+    text-align: center;
+    @media only screen and (max-width: 640px) {
+      font-size: 14px;
+      z-index: 999;
+    }
   }
 }
-
 .footer-links {
   a {
     font-size: 16px;
@@ -75,7 +73,6 @@ footer ul li {
   }
 
   @media only screen and (max-width: 768px) {
-  margin-top: 20px;
+    margin-top: 20px;
   }
-
 }
