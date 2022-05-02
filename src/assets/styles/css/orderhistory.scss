@@ -76,6 +76,19 @@
     overflow: hidden;
     margin: 1px;
     padding-bottom: 5px;
+
+
+    @media only screen and (max-width: 768px) {
+      width: calc(50% - 0px);
+      margin: 0px;
+    }
+
+  }
+
+  .yellow-bg-test {
+    @media only screen and (max-width: 768px) {
+    width: calc(100% - 10px);
+    }
   }
 
 
