@@ -64,7 +64,7 @@
         'text-align': 'center',
         'background-image':
           'url(' +
-          'http://mamnoontogo.net/wp-content/uploads/2021/11/MStreet-Environment-9131-scaled.jpg' +
+          'http://mamnoontogo.net/wp-content/uploads/2022/05/MStreet-Environment-9131-scaled-2.jpeg' +
           ')',
         'background-position': 'center',
         position: 'relative',
@@ -76,7 +76,7 @@
 
       <div class="bottomAttach header black secPadMedAlt">
         <img
-          src="http://mamnoontogo.net/wp-content/uploads/2021/11/MStreet-Environment-9131-scaled.jpg"
+          src="http://mamnoontogo.net/wp-content/uploads/2022/05/MStreet-Environment-9131-scaled-2.jpeg"
           class="responsiveBannerImage"
         />
         <div class="container" style="position: relative;">
