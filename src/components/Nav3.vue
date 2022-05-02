@@ -311,11 +311,11 @@
                 </router-link>
               </li>
 
-              <li>
+              <!-- <li>
                 <router-link to="/newsletterarchive">
                   newsletter archive
                 </router-link>
-              </li>
+              </li> -->
 
               <!-- <li>
                 <a
