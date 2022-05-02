@@ -33,7 +33,7 @@
                   >
                     <div
                       v-html="restaurant.logo_svg"
-                      class="restaurantLogo"
+                      class="restaurantLogoTile"
                     ></div>
 
                     .
