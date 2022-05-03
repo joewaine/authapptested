@@ -367,7 +367,7 @@ self.preferredGiftCard = userInfo.user.giftcard
 
 
 <style lang="scss">
-  @import '@/assets/styles/css/giftcardmodule.scss';
+  @import '@/assets/styles/css/giftCardModule.scss';
 </style>
 
 

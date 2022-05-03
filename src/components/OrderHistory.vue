@@ -32,5 +32,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/styles/css/orderhistory.scss";
+@import "@/assets/styles/css/orderHistory.scss";
 </style>

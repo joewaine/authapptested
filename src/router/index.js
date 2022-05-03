@@ -121,7 +121,7 @@ const routes = [
   {
     path: "/packages-street",
     name: "packages-street",
-    component: () => import("../views/packages-street.vue"),
+    component: () => import("../views/packagesStreet.vue"),
     meta: {
       requiresAuth: true
     }
@@ -129,7 +129,7 @@ const routes = [
   {
     path: "/mamnoontesting",
     name: "mamnoontesting",
-    component: () => import("../views/mamnoontesting.vue")
+    component: () => import("../views/mamnoonTesting.vue")
   },
   {
     path: "/mamnoonstreettesting",
@@ -149,7 +149,7 @@ const routes = [
   {
     path: "/orderconfirmation",
     name: "orderconfirmation",
-    component: () => import("../views/orderconfirmation.vue")
+    component: () => import("../views/orderConfirmation.vue")
   },
   {
     path: "/upserveinfo",
@@ -172,12 +172,12 @@ const routes = [
   {
     path: "/loginauth",
     name: "loginauth",
-    component: () => import("../views/loginauth.vue")
+    component: () => import("../views/loginAuth.vue")
   },
   {
     path: "/addproduct",
     name: "addproduct",
-    component: () => import("../views/addproduct.vue")
+    component: () => import("../views/addProduct.vue")
   },
   {
     path: '/todaystransactions',
@@ -190,7 +190,7 @@ const routes = [
   {
     path: '/transactions',
     name: "transactions",
-    component: () => import("../views/todaystransactions.vue"),
+    component: () => import("../views/todaysTransactions.vue"),
     meta: {
       requiresAuth: true
     }
@@ -215,7 +215,7 @@ const routes = [
   },
   {
     path: "/:id",
-    component: () => import("../views/restauranttemplate.vue"),
+    component: () => import("../views/restaurantTemplate.vue"),
     meta: {
       title: 'facebook'
     }

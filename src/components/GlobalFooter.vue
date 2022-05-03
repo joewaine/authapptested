@@ -70,5 +70,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '@/assets/styles/css/globalfooter.scss';
+  @import '@/assets/styles/css/globalFooter.scss';
 </style>

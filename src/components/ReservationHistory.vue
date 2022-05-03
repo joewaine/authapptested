@@ -164,7 +164,7 @@ showToFixed: function (value) {
 
 
 <style lang="scss">
-  @import '@/assets/styles/css/reservationhistory.scss';
+  @import '@/assets/styles/css/reservationHistory.scss';
 </style>
 
 

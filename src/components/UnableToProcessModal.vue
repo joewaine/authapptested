@@ -54,5 +54,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import '@/assets/styles/css/unabletoprocessmodal.scss';
+  @import '@/assets/styles/css/unableToProcessModal.scss';
 </style>
