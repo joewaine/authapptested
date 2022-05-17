@@ -491,10 +491,6 @@ export default {
       this.openTimesUpdated = this.openTimes;
     },
     selectedDate() {
-      // if(this.selectedDate){
-      //         console.log(this.selectedDate.dayLabel.substring(0,3))
-      // }
-
       this.currentOrder.scheduled_time = null;
 
       let storeCurrentOrder = this.currentOrder;
