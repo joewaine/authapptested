@@ -1,0 +1,224 @@
+.restaurants {
+  background-color: #f15d58;
+  padding-top: 132px;
+  // padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 992px) {
+  .restaurants {
+    padding-top: 112px;
+  }
+}
+
+h1 {
+  color: $nadi-red-color;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.ff h2 {
+  text-transform: lowercase;
+  margin-bottom: 24px;
+  font-size: 36px;
+}
+
+p.list-of-links {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+  a {
+    font-style: italic;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .restaurantBox {
+    background: white;
+    margin-bottom: 50px;
+    height: 840px !important;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .restaurantBox {
+    height: auto !important;
+  }
+
+  .bottomButton {
+    width: 100%;
+    font-size: 18px !important;
+    margin: 16px 24px 0 0 !important;
+  }
+
+  .bottomLinks {
+    padding-left: 0px !important;
+  }
+}
+
+.restaurantBox {
+  background: white;
+  margin-bottom: 50px;
+  height: 830px;
+  border-radius: 10px;
+
+  @media only screen and (max-width: 1080px) {
+    height: 900px;
+  }
+
+  .imgBox {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 10px 0 0;
+
+    @media only screen and (max-width: 768px) {
+      height: 320px;
+    }
+  }
+}
+
+.restaurantContent {
+  padding: 20px 20px 20px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px 15px 20px;
+  }
+}
+
+.restaurantName {
+  display: block;
+  // height: 100px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+// .subpage-header {
+//   font-size: 32px;
+//   line-height: 46px;
+// }
+
+.pb100 {
+  padding-bottom: 100px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
+.infoIconLine2 {
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+
+  &.top {
+    margin-top: 0;
+  }
+}
+
+.listLinks {
+  padding-left: 10px;
+}
+
+.hours {
+  display: block;
+}
+.hours:nth-of-type(even) {
+  margin-top: 10px;
+}
+
+.listLink {
+  display: block;
+  color: black;
+  font-weight: 500;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.bottomLinks {
+  padding-left: 10px;
+}
+
+.bottomButton {
+  display: inline-block;
+  margin: 23px 24px 0 0;
+  text-align: center;
+  padding: 5px 8px 5px;
+  padding: 1px 20px 3px;
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 22px;
+  font-weight: 500;
+  & {
+    @extend %nadi-primary-alt-button;
+  }
+
+  &:hover {
+    color: #fff;
+    background: black;
+    text-decoration: none;
+  }
+}
+
+.right-icon-text {
+  padding-left: 50px;
+  position: relative;
+  min-height: 50px;
+  margin-top: 1rem;
+  margin-top: 10px;
+  // span {
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-44%);
+  //   padding-bottom: 35px;
+  // }
+  svg {
+    width: 20px;
+    position: initial;
+    margin-right: 10px;
+    position: absolute;
+    height: 100%;
+    // background: pink;
+    left: 10px;
+    @media only screen and (max-width: 768px) {
+      left: 2px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 40px;
+  }
+}
+
+.imgBox {
+  color: transparent;
+}
+
+.imgBoxRelative {
+  position: relative;
+
+  .restaurantLogoTile {
+    width: 40%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.linkBlack {
+  color: black;
+  &:hover {
+    color: black;
+  }
+}
+
+.padIn {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,59 @@
+
+.about {
+  h1 {
+    // display: inline;
+    color: $nadi-red-color;
+    text-align: left;
+    margin: 30px 10px 0px auto;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+p{
+  &.list-of-links {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+    a {
+      font-style: italic;
+    }
+
+    @media only screen and (max-width: 992px) {
+      margin-top: 40px;
+      a {
+        display: block;
+      }
+    }
+
+  }
+}
+
+.halfwidthclass {
+  width: 50%;
+  margin-top: 50px;
+  transform: translateX(-10px);
+  &.smalled {
+    width: 37.5%;
+  }
+}
+
+.st0 {
+  display: none;
+}
+.st1 {
+  display: inline;
+  fill: #575757;
+}
+.st2 {
+  display: none;
+  fill: #f15d58;
+}
+.st4 {
+  fill: #f15d58;
+}
+.st3 {
+  fill: #424242;
+}

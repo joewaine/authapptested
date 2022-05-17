@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import swal from "sweetalert";
+import swal from "vue-sweetalert2";
 export default {
   data() {
     return {
@@ -66,10 +66,11 @@ export default {
     async registerUser() {
       try {
         let response = await this.$http.post("/user/register", this.register);
+         console.log(response);
         let token = response.data.token;
         if (token) {
           localStorage.setItem("jwt", token);
-          this.$router.push("/");
+          this.$router.push("/transactions");
           swal("Success", "Registration Was successful", "success");
         } else {
           swal("Error", "Something Went Wrong", "Error");
@@ -90,7 +91,7 @@ export default {
 
 
 .nav-acc-header{
-  padding-top: 140px;
+  padding-top: 130px;
 }
 
 

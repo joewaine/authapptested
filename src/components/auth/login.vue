@@ -1,5 +1,5 @@
 <template>
-  <div class="container nav-acc-header">
+  <div class="container nav-acc-header" style="padding-top: 100px;">
     <div class="row">
       <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1">
         <form
@@ -26,11 +26,11 @@
             required
           />
 
-          <p>
-            Dont have an account??<router-link to="/register"
+          <!-- <p>
+            Dont have an account??&nbsp;<router-link to="/register"
               >click here</router-link
             >
-          </p>
+          </p> -->
 
           <!-- Sign in button -->
           <center>
@@ -48,50 +48,39 @@
 </template>
 
 <script>
-import swal from "sweetalert";
+import swal from "vue-sweetalert2";
 export default {
   data() {
     return {
       login: {
         email: "",
-        password: ""
+        password: "",
+        name: ""
       }
     };
   },
   methods: {
     async loginUser() {
+      //  loginUser() {
+      //  this.$router.push("/home");
       try {
-        let response = await this.$http.post("/user/login", this.login);
+ 
+       let response = await this.$http.post("/user/login", this.login);
+       console.log(response)
         let token = response.data.token;
         localStorage.setItem("jwt", token);
         if (token) {
-          swal("Success", "Login Successful", "Error");
-          this.$router.push("/home");
+          // swal("Success", "Login Successful", "Error");
+          this.$router.push("/transactions");
         }
       } catch (err) {
         swal("Error", "Something Went Wrong", "error");
         console.log(err.response);
       }
     }
-  }
-};
+  
+}
+}
+
 </script>
 
-
-<style>
-
-
-.nav-acc-header{
-  padding-top: 140px;
-}
-
-
-@media only screen and (max-width: 1080px) {
-
-.nav-acc-header{
- padding-top: 80px;
-}
-
-}
-
-</style>

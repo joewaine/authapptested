@@ -1,0 +1,107 @@
+
+
+#order-history {
+  table {
+    border-collapse: collapse;
+    padding: 0;
+    display: table;
+  }
+
+  table th,
+  table tr {
+    // display:table-cell;
+    vertical-align: top;
+  }
+
+  table td {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  
+
+
+
+
+
+  tr {
+    border-bottom: 1px solid #cacaca;
+  }
+
+  tr td {
+    padding: 18px 5px 10px 0px;
+    // height: 56px;
+    margin-bottom: 0;
+    display: table-cell;
+    vertical-align: top;
+
+    &.primary {
+      background: #bfebbf;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.smblk {
+  color: #000;
+  font-size: 0.9rem;
+}
+
+ul.order-items {
+  padding-left: 0;
+  color: #000;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .hide-mob {
+    display: none !important;
+  }
+
+  .text-right-mob {
+    text-align: right !important;
+  }
+}
+
+.pad-yellow-background {
+  // background: #fff367;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+.container.pad-yellow-background {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.giftcard-item.w100 td:first-child {
+  padding-left: 0;
+}
+
+#order-history tr:last-child {
+  border-bottom: 0;
+}
+
+
+
+.orderDetail {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .orderDetail {
+    display: inline;
+  }
+}
