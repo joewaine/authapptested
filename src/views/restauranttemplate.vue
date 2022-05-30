@@ -87,5 +87,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '@/assets/styles/css/restaurantTemplate.scss';
+  @import '@/assets/styles/css/restauranttemplate.scss';
 </style>

@@ -1137,5 +1137,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '@/assets/styles/css/virtualTemplate.scss';
+  @import '@/assets/styles/css/virtualtemplate.scss';
 </style>
