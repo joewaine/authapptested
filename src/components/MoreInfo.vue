@@ -347,5 +347,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/styles/css/moreInfo.scss";
+@import "@/assets/styles/css/moreinfo.scss";
 </style>

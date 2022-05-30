@@ -941,5 +941,5 @@ console.log(this);
 
 
 <style lang="scss">
-  @import '@/assets/styles/css/packagesAdmin.scss';
+  @import '@/assets/styles/css/packagesadmin.scss';
 </style>

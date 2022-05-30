@@ -25,15 +25,13 @@ import "sweetalert2/dist/sweetalert2.min.css";
 // auth
 import { domain, clientId } from "../auth_config.json";
 import { Auth0Plugin } from "./auth";
-import VueGoogleAutocomplete from 'vue-google-autocomplete'
+import VueGoogleAutocomplete from "vue-google-autocomplete";
 
 import VideoBg from "vue-videobg";
 
+import JsonCSV from "vue-json-csv";
 
-import JsonCSV from 'vue-json-csv'
-
-Vue.component('downloadCsv', JsonCSV)
-
+Vue.component("downloadCsv", JsonCSV);
 
 Vue.component("video-bg", VideoBg);
 
@@ -53,7 +51,6 @@ Vue.use(Auth0Plugin, {
 
 Vue.use(VueGoogleAutocomplete);
 
-
 Vue.use(VueObserveVisibility);
 // Vue.use(VueMeta)
 
@@ -65,92 +62,76 @@ Vue.use(Meta, {
   refreshOnceOnNavigation: true,
 });
 
-
 Vue.mixin({
   methods: {
-    validGiftCard: function(number){
+    validGiftCard: function(number) {
       var re = /^[0-9]{16}$/;
       return re.test(number);
     },
-    validEmail: function (email) {
+    validEmail: function(email) {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
     },
 
-   validPhone: function (phone) {
+    validPhone: function(phone) {
       var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
       return re.test(phone);
     },
-   validPostal: function (postal_code) {
+    validPostal: function(postal_code) {
       var re = /^[0-9]{5}(?:-[0-9]{4})?$/;
       return re.test(postal_code);
     },
 
-validCity: function(city){
-  return city.length > 0
-},
-validState: function(state){
-return state.length === 2;
-},
-       validAddress: function (address) {
+    validCity: function(city) {
+      return city.length > 0;
+    },
+    validState: function(state) {
+      return state.length === 2;
+    },
+    validAddress: function(address) {
       var re = /^(?:[Pp][Oo]\s[Bb][Oo][Xx]|[0-9]+)\s(?:[0-9A-Za-z\.'#]|[^\S\r\n])+/gm;
       return re.test(address);
     },
-      validFullName: function (fullname) {
+    validFullName: function(fullname) {
       let name = fullname.trim();
       var re = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g;
       return re.test(name);
     },
-      validFirstName: function (firstname) {
+    validFirstName: function(firstname) {
       var re = /^([ \u00c0-\u01ffa-zA-Z'\-])+$/g;
       return re.test(firstname);
     },
-      validLastName: function (lastname) {
+    validLastName: function(lastname) {
       var re = /^([ \u00c0-\u01ffa-zA-Z'\-])+$/g;
       return re.test(lastname);
     },
-    imageDimensions(imageSource){
-
-
-
+    imageDimensions(imageSource) {
       let img = new Image();
-  img.src = imageSource;
-  
-  
-  // console.log(img);
-  // console.log(img);
-  
-  return  img.width/img.height;
-  
-  
-  
-  
-  },
-  formatWithAddons(order){
+      img.src = imageSource;
 
-    let finishedPrice = order.price_cents;
-    
-    for(let i = 0;i<order.modifiers.length;i++){
-      finishedPrice = finishedPrice + order.modifiers[i].price;
-    }
-    
-    return finishedPrice.toFixed(2)/100 * order.quantity;
-    
+      // console.log(img);
+      // console.log(img);
+
+      return img.width / img.height;
     },
-    checkIfGiftCard(value){
+    formatWithAddons(order) {
+      let finishedPrice = order.price_cents;
 
-      if(value.includes("Gift Card")){
-        return 'gift card';
-      }else{
-        return value
+      for (let i = 0; i < order.modifiers.length; i++) {
+        finishedPrice = finishedPrice + order.modifiers[i].price;
       }
-    
+
+      return (finishedPrice.toFixed(2) / 100) * order.quantity;
+    },
+    checkIfGiftCard(value) {
+      if (value.includes("Gift Card")) {
+        return "gift card";
+      } else {
+        return value;
+      }
     },
   },
-})
-
-
-
+});
 
 Vue.use(VueCurrencyInput);
 Vue.component("v-select", vSelect);
@@ -160,33 +141,27 @@ Vue.use(VueSweetalert2);
 // console.log(process.env.VUE_APP_BASE_URL);
 // console.log(process.env);
 
-
 const checkURL = () => {
   if (process.env.NODE_ENV === "development") {
     return process.env.VUE_APP_LOCAL_URL;
-
   } else if (process.env.NODE_ENV === "production") {
-     return process.env.VUE_APP_BASE_URL;
+    return process.env.VUE_APP_BASE_URL;
   }
 };
 
-
 const base = axios.create({
-  baseURL: process.env.VUE_APP_BASE_URL
+  baseURL: process.env.VUE_APP_BASE_URL,
 });
 
 // const base = axios.create({
 //   baseURL: process.env.VUE_APP_LOCAL_URL
 // });
 
-
 Vue.use(Sticky);
 
 axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
 
 Vue.prototype.$http = base;
-
-
 
 Vue.config.productionTip = false;
 
@@ -238,7 +213,7 @@ const vuexLocalStorage = new VuexPersist({
 const store = new Vuex.Store({
   plugins: [vuexLocalStorage.plugin],
   state: {
-    dashboard: 'empty',
+    dashboard: "empty",
     reorderTrue: false,
     homePageData: null,
     pageData: null,
@@ -737,8 +712,8 @@ const store = new Vuex.Store({
     },
   },
   mutations: {
-    dashboardChoose(state, { dashboardChoose }){
-      state.dashboard = dashboardChoose
+    dashboardChoose(state, { dashboardChoose }) {
+      state.dashboard = dashboardChoose;
     },
     increment: (state) => state.count++,
     decrement: (state) => state.count--,
@@ -777,11 +752,11 @@ const store = new Vuex.Store({
     upserveOrderCurrentOrder(state, { storeCurrentOrder }) {
       state.storeCurrentOrder = storeCurrentOrder;
     },
-    reordertrue(state){
-      state.reorderTrue = true
+    reordertrue(state) {
+      state.reorderTrue = true;
     },
-    reorderfalse(state){
-      state.reorderTrue = false
+    reorderfalse(state) {
+      state.reorderTrue = false;
     },
     removeUserInfo(state) {
       let billing = {
@@ -813,31 +788,19 @@ const store = new Vuex.Store({
       state.storeRetail.billing = billing;
       state.storeRetail.fulfillment_info.customer = customer;
     },
-    upserveOrderCurrentOrderUpdateMamnoonEmail(
-      state,
-      { storeMamnoonEmail }
-    ) {
+    upserveOrderCurrentOrderUpdateMamnoonEmail(state, { storeMamnoonEmail }) {
       state.storeRetail.fulfillment_info.customer.email = storeMamnoonEmail;
     },
     upserveOrderCurrentOrderUpdate(state, { storeOrderUpdate }) {
       state.storeOrderUpdate = storeOrderUpdate;
     },
-    upserveOrderCurrentOrderUpdateRetail(
-      state,
-      { storeRetail }
-    ) {
+    upserveOrderCurrentOrderUpdateRetail(state, { storeRetail }) {
       state.storeRetail = storeRetail;
     },
-    upserveOrderCurrentOrderUpdateStreet(
-      state,
-      { storeStreet }
-    ) {
+    upserveOrderCurrentOrderUpdateStreet(state, { storeStreet }) {
       state.storeStreet = storeStreet;
     },
-    upserveOrderCurrentOrderUpdateMamnoon(
-      state,
-      { storeMamnoon }
-    ) {
+    upserveOrderCurrentOrderUpdateMamnoon(state, { storeMamnoon }) {
       state.storeMamnoon = storeMamnoon;
     },
     upserveOrderCurrentOrderUpdateMamnoonTesting(
@@ -981,7 +944,6 @@ const store = new Vuex.Store({
 
       let AcfBlock = responseAcf;
       state.homePageData = AcfBlock.data.acf.home;
-
     },
   },
 });
@@ -1016,7 +978,6 @@ new Vue({
     // this.$store.dispatch('myAxiosFetchFunction');
 
     this.$store.commit("setPageData");
-
   },
 }).$mount("#app");
 

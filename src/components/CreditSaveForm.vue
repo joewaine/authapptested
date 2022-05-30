@@ -481,7 +481,7 @@ self.preferredGiftCard = userInfo.user.giftcard
 
 
 <style lang="scss">
-  @import '@/assets/styles/css/creditSaveForm.scss';
+  @import '@/assets/styles/css/creditsaveform.scss';
 </style>
 
 

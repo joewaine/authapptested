@@ -54,5 +54,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '@/assets/styles/css/cartDropdown.scss';
+  @import '@/assets/styles/css/cartdropdown.scss';
 </style>

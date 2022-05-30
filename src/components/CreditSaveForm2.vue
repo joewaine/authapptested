@@ -152,7 +152,7 @@ props: ['emailAddress'],
 
 
 <style lang="scss">
-  @import '@/assets/styles/css/creditSaveForm2.scss';
+  @import '@/assets/styles/css/creditsaveform2.scss';
 </style>
 
 
