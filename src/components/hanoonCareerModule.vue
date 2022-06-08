@@ -23,8 +23,8 @@
             <span class="listItem">server assistant - <a href="https://www.indeed.com/jobs?q=mama%20restaurant%20group&l=Seattle%2C%20WA&vjk=aa7669a48616dfc4">apply here</a></span>
             <br>
             <span class="listItem">host - <a href="https://www.indeed.com/jobs?q=mama%20restaurant%20group&l=Seattle%2C%20WA&vjk=cf6ee5f8f94a80f2">apply here</a></span>
-            <br>
-            <span class="listItem">dishwasher - <a href="https://www.indeed.com/jobs?q=mama%20restaurant%20group&l=Seattle%2C%20WA&vjk=8ab8b42f6599770d">apply here</a></span>
+            <!-- <br>
+            <span class="listItem">dishwasher - <a href="https://www.indeed.com/jobs?q=mama%20restaurant%20group&l=Seattle%2C%20WA&vjk=8ab8b42f6599770d">apply here</a></span> -->
           </div>
           <div class="nowHiring">
             <span class="listTitle">bar</span>
@@ -37,8 +37,8 @@
             <br>
             <span class="listItem">sous chef - <a href="https://www.indeed.com/jobs?q=mama%20restaurant%20group&l=Seattle%2C%20WA&vjk=7a7fe4a9e6b47af0">apply here</a></span>
             <br>
-            <span class="listItem">general manager - <a href="https://www.indeed.com/job/general-manager-new-restaurant-opening-7bcfa509dd53432b">apply here</a></span>
-                        <br>
+            <!-- <span class="listItem">general manager - <a href="https://www.indeed.com/job/general-manager-new-restaurant-opening-7bcfa509dd53432b">apply here</a></span>
+            <br> -->
             <span class="listItem">front of house manager - <a href="https://www.indeed.com/jobs?q=mama%20restaurant%20group&l=Seattle%2C%20WA&vjk=817b3f3f558a7fe1">apply here</a></span>
           </div>
           <div class="nowHiring">

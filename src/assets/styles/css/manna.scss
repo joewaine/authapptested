@@ -2,6 +2,8 @@
   text-align: center;
   display: contents;
 }
+
+
 .holderManna {
   background-color: $nadi-black-color !important;
   height: 100%;
@@ -51,21 +53,60 @@
 .mannaJobs {
   margin-top: 120px;
   text-align: justify;
-  margin-right: 10vw !important;
+  margin-right: 6vw !important;
   @media only screen and (max-width: 768px) {
     left: -15px;
     margin-bottom: 10%;
     width: 100%;
     margin-left: 55%;
   }
+  p {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    color: $nadi-white-color;
+  }
+  span a {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14pt;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: $nadi-white-color !important;
+  }
   .listItemManna {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
     color: $nadi-white-color !important;
     @media only screen and (max-width: 768px) {
-      font-size: 18pt;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-style: initial;
+      font-weight: 500;
+      font-size: 14pt;
+      display: inline-flex;
+      align-items: center;
+      height: 3vh;
+      white-space: pre;
+      margin-top: 5px;
+      .listItemManna a {
+        font-size: 20px;
+      }
+    }
+  }
+  .titleManna {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500, bold;
+    font-size: 30px;
+    line-height: 47px;
+    color: $nadi-white-color;
+    @media only screen and (max-width: 768px) {
+      font-size: 24pt;
       line-height: 30pt;
     }
   }

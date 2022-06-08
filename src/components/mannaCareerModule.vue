@@ -12,9 +12,13 @@
       <div class="col-md-4"></div>
       <div class="mannaJobs">
         <div>
+          <span class="titleManna">kitchen</span>
           <p>
             <span class="listItemManna"
-              >no openings at this time, please check back later</span
+              >mezze master / prep cook -&nbsp;<a
+                href="https://www.indeed.com/job/mezze-master-prep-cook-96a4da7fe294ec66"
+                >apply here</a>
+              </span
             >
           </p>
         </div>
