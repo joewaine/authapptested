@@ -15,8 +15,8 @@
           <span class="titleManna">kitchen</span>
           <p>
             <span class="listItemManna"
-              >mezze master / prep cook -&nbsp;<a
-                href="https://www.indeed.com/job/mezze-master-prep-cook-96a4da7fe294ec66"
+              >line cook -&nbsp;<a
+                href="https://www.indeed.com/cmp/Mamnoon-1/jobs?jk=e8120c30d477abcf"
                 >apply here</a>
               </span
             >

@@ -15,16 +15,19 @@
           <span class="titleMamnoon">kitchen</span>
           <p>
             <span class="listItemMamnoon"
-              >mezze master / prep cook -&nbsp;<a
-                href="https://poachedjobs.com/jobs/seattle-wa-kitchen-jobs-mamnoon-mezze-master-prep-cook?from=jobs&rec=false"
+              >line cook -&nbsp;<a
+                href="https://poachedjobs.com/jobs/seattle-wa-kitchen-jobs-mamnoon-line-cook-3?from=jobs&rec=false"
                 >apply here</a
               ></span
             >
           </p>
+        </div>
+         <div class="nowHiring">
+          <span class="titleMamnoon">management</span>
           <p>
             <span class="listItemMamnoon"
-              >pastry assistant -&nbsp;<a
-                href="https://poachedjobs.com/jobs/seattle-wa-kitchen-jobs-mamnoon-pastry-assistant?from=jobs&rec=false"
+              >front of house manager -&nbsp;<a
+                href="https://poachedjobs.com/jobs/seattle-wa-management-jobs-mamnoon-foh-floor-manager?from=jobs&rec=false"
                 >apply here</a
               ></span
             >

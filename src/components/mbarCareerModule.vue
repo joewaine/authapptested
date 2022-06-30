@@ -11,21 +11,12 @@
       </div>
       <div class="col-md-4"></div>
         <div class="openings">
-          <span class="listTitleMbar">bar</span>
+          <span class="listTitleMbar">kitchen</span>
           <p>
             <span class="listItemMbar"
-              >barback / server assistant -&nbsp;
+              >line cook -&nbsp;
               <a
-                href="https://poachedjobs.com/jobs/seattle-wa-floor-jobs-mbar-barbackserver-assistant?from=jobs&rec=false"
-                >apply here</a
-              ></span
-            >
-          </p>
-          <p>
-            <span class="listItemMbar"
-              >bartender -&nbsp;
-              <a
-                href="https://poachedjobs.com/jobs/seattle-wa-bar-jobs-mbar-bartender-6?from=jobs&rec=false"
+                href="https://www.indeed.com/cmp/Mamnoon-1/jobs?jk=2be3c04b50dcb1c4"
                 >apply here</a
               ></span
             >
