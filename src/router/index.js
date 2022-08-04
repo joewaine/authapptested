@@ -147,7 +147,7 @@ const routes = [
   {
     path: "/orderconfirmation",
     name: "orderconfirmation",
-    component: () => import("../views/orderconfirmation.vue"),
+    component: () => import("../views/orderconfirmation.vue")
   },
   {
     path: "/upserveinfo",
@@ -156,6 +156,11 @@ const routes = [
     meta: {
       requiresAuth: true,
     },
+  },
+  {
+    path: "/hanoon-test-menu",
+    name: "menus",
+    component: () => import("../views/menus.vue")
   },
   {
     path: "/profile",
@@ -170,7 +175,7 @@ const routes = [
   {
     path: "/loginauth",
     name: "loginauth",
-    component: () => import("../views/loginauth.vue"),
+    component: () => import("../views/loginauth.vue")
   },
   {
     path: "/addproduct",
