@@ -24,7 +24,7 @@
     "jquery": "^3.5.1",
     "module": "^1.2.5",
     "moment": "^2.29.1",
-    "moment-timezone": "^0.5.31",
+    "moment-timezone": "^0.5.35",
     "mongodb": "^3.5.9",
     "npm-check": "^5.9.2",
     "postscribe": "^2.0.8",
