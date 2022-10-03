@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import { PlasmicComponent } from '@plasmicapp/loader-vue';
+import { PLASMIC } from '../plasmic-init';
 
 import AxiosPlugin from "vue-axios-cors";
 
@@ -9,7 +11,36 @@ import Datepicker from "vuejs-datepicker";
 Vue.use(AxiosPlugin);
 Vue.use(VueRouter);
 
-Vue.use(Datepicker);
+
+Vue.use(Datepicker)
+
+const CatchAllPage = {
+  data() {
+    return {
+      loading: true,
+      pageData: null
+    };
+  },
+  created() {
+    this.fetchData();
+  },
+  render() {
+    if (this.loading) {
+      return <div>Loading...</div>;
+    }
+    if (!this.pageData) {
+      return <div>Not found</div>;
+    }
+    return <PlasmicComponent component={location.pathname} />;
+  },
+  methods: {
+    async fetchData() {
+      const pageData = await PLASMIC.maybeFetchComponentData(location.pathname);
+      this.pageData = pageData;
+      this.loading = false;
+    }
+  }
+};
 
 const routes = [
   {
@@ -180,7 +211,7 @@ const routes = [
   {
     path: "/addproduct",
     name: "addproduct",
-    component: () => import("../views/addproduct.vue"),
+    component: () => import("../views/addproduct.vue")
   },
   {
     path: "/todaystransactions",
@@ -217,12 +248,17 @@ const routes = [
     component: () => import("../views/careers.vue"),
   },
   {
+    path: "/*",
+    component: CatchAllPage,
+  },
+  {
     path: "/:id",
     component: () => import("../views/restauranttemplate.vue"),
     meta: {
       title: "facebook",
     },
   },
+  
 ];
 
 const router = new VueRouter({

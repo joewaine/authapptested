@@ -2,7 +2,6 @@
   <div class="container pad-yellow-background pd50">
     <!-- Loop through multiple reports? Add filter functionality to pull in reports from 
       Gravity and DoorDash and combine information to display in Table Body -->
-
     <table class="table">
       <thead>
         <tr style="">

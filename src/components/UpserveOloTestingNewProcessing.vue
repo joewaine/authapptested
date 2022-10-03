@@ -2273,7 +2273,7 @@ import CloseModalMed from "@/components/svgIcons/CloseModalMed";
 import CloseModalRed from "@/components/svgIcons/CloseModalRed";
 import CloseModalSm from "@/components/svgIcons/CloseModalSm";
 
-import Swiper from "@/components/Swiper";
+// import Swiper from "@/components/Swiper";
 
 
 import OrderConfirmationModal from "@/components/OrderConfirmationModal"
@@ -2367,7 +2367,7 @@ export default {
     NadiIconSmX,
     NadiIconSmXSidebar,
     SavedCard,
-    Swiper,
+    // Swiper,
     SliderNav,
     MoreInfo,
     CartIcon,
