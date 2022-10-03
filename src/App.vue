@@ -1,16 +1,27 @@
 <template>
-  <div id="app">
+<div>
+  <Nav3/>
+  <PlasmicRootProvider :loader="this.loader">
+    <!-- Router renders everything here, including Plasmic pages. -->
     <router-view />
+  </PlasmicRootProvider>
   </div>
 </template>
 
 <script type="text/javascript">
-
-
-
-
-
+import { PlasmicRootProvider } from "@plasmicapp/loader-vue";
+import { PLASMIC } from "./plasmic-init";
+import Nav3 from './components/Nav3.vue'
 export default {
+  components: {
+    PlasmicRootProvider,
+    Nav3
+  },
+  computed: {
+    loader() {
+      return PLASMIC;
+    },
+  },
   metaInfo: {
     name: "App",
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -67,7 +78,6 @@ body {
 .section-pad {
   margin-top: 50px;
   margin-bottom: 50px;
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
   padding-bottom: 40px;
 }
@@ -403,7 +413,6 @@ h4.error {
     padding: 0px;
     overflow: hidden;
     margin-bottom: 5px;
-    // border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
   }
 
@@ -905,7 +914,6 @@ h4.error {
     .half-width2right {
       width: 35%;
       float: left;
-
       height: 140px;
       overflow: hidden;
     }

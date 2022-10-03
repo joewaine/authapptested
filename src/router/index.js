@@ -248,8 +248,8 @@ const routes = [
     component: () => import("../views/careers.vue")
   },
   {
-    path: '/plasmic',
-    component: CatchAllPage
+    path: "/*",
+    component: CatchAllPage,
   },
   {
     path: "/:id",
