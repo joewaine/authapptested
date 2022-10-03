@@ -247,10 +247,10 @@ const routes = [
     name: "careers",
     component: () => import("../views/careers.vue"),
   },
-  {
-    path: "/*",
-    component: CatchAllPage,
-  },
+  // {
+  //   path: "/*",
+  //   component: CatchAllPage,
+  // },
   {
     path: "/:id",
     component: () => import("../views/restauranttemplate.vue"),
