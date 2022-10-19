@@ -25,8 +25,9 @@
   padding-top: 1.5vh;
   margin-top: 80px;
   height: 100%;
+  margin:auto;
+  text-align: center;
   padding-bottom: 20px;
-  margin-left: 50px;
   background-color: $nadi-white-color !important;
   @media only screen and (max-width: 768px) {
     display: grid;
@@ -39,9 +40,9 @@
 
 .main-content p {
   color: $nadi-black-color;
-  text-align: left;
+  text-align: center;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin-right: auto;
+  margin: auto;
   width: 40%;
   @media only screen and (max-width: 992px) {
     width: 90%;

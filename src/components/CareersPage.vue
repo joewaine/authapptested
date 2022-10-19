@@ -15,26 +15,8 @@
         attachments are in pdf format.
       </p>
       <p>
-        scroll below to see current openings.
+        see all of our current openings at <a href="https://poachedjobs.com/jobs/all/everywhere?q=mamarg">poached</a> and <a href="https://www.indeed.com/jobs?q=mama+restaurant+group&l=Seattle%2C+WA&from=searchOnHP&vjk=06fae830f451e40a">indeed</a>
       </p>
-    </div>
-    <div id="hanoon">
-      <Hanoon />
-    </div>
-    <div>
-      <Manna />
-    </div>
-    <div id="mbar">
-      <Mbar />
-    </div>
-    <div>
-      <Street />
-    </div>
-    <div>
-      <Mamnoon />
-    </div>
-    <div>
-      <Anar />
     </div>
     <div>
       <NoOpenings />
@@ -49,24 +31,12 @@
 import Nav3 from "@/components/Nav3";
 import GlobalFooter from "@/components/GlobalFooter";
 import Logos from "@/components/Logos";
-import Hanoon from "@/components/hanoonCareerModule.vue";
-import Manna from "@/components/mannaCareerModule.vue";
-import Mbar from "@/components/mbarCareerModule.vue";
-import Street from "@/components/streetCareerModule.vue";
-import Mamnoon from "@/components/mamnoonCareerModule.vue";
-import Anar from "@/components/anarCareerModule.vue";
 import NoOpenings from "@/components/noOpeningsModule.vue";
 export default {
   components: {
     Nav3,
     GlobalFooter,
     Logos,
-    Hanoon,
-    Manna,
-    Mbar,
-    Street,
-    Mamnoon,
-    Anar,
     NoOpenings,
   },
 };
