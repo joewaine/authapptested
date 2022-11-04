@@ -22,7 +22,7 @@ export default {
         aria-describedby="modalDescription"
       >
         <header class="modal-header" id="modalTitle">
-          <slot name="header"> Thanksgiving 2022 </slot>
+          <slot name="header"> <i>Thanksgiving 2022</i> </slot>
           <button
             type="button"
             class="btn-close"
@@ -71,22 +71,26 @@ export default {
 .modalAnnounce {
   background: #ffffff;
   // position: absolute;
-  height: 250px !important;
-  width: 40% !important;
+  height: 350px !important;
+  width: 30% !important;
   overflow-x: auto;
   display: flex !important;
   flex-direction: column;
   margin: auto;
   top: 0;
   @media only screen and (max-width: 1323px) {
-    margin-top: 10.3vh;
-  }
-  @media only screen and (max-width: 928px) {
-    height: 320px !important;
-    margin-top: 10.3vh;
-  }
-  @media only screen and (max-width: 405px) {
     height: 420px !important;
+  }
+  @media only screen and (max-width: 1100px) {
+    height: 500px !important;
+  }
+
+  @media only screen and (max-width: 928px) {
+    height: 450px !important;
+    width: 300px !important;
+  }
+  @media only screen and (max-width: 402px) {
+    height: 500px !important;
   }
 }
 
@@ -95,29 +99,46 @@ export default {
   padding: 15px;
   display: flex;
   justify-content: center !important;
-  background-color: rgb(0, 0, 0, 0.9);
+  background-color: $nadi-black-color;
   border: none !important;
+
 }
 
 .modal-header {
   position: relative;
-  color: $nadi-white-color;
+  color: $nadi-red-color;
   justify-content: space-between;
   text-align: center;
   border: none;
+  font-size: 22pt;
+  font-weight: 800;
+
+  @media only screen and (max-width: 768px){
+    font-size: 18pt;
+  }
 }
 
 .modal-footer {
   flex-direction: column;
   border-top: none !important;
+  height: 150px !important;
 }
 
 .modalBody {
   position: relative;
-  padding: 30px 10px;
-  background-color: rgb(0, 0, 0, 0.9);
+  padding: 0 50px;
+  background-color: $nadi-black-color;
   color: white;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19pt;
+  text-align: left;
+  box-sizing: border-box;
+  @media only screen and (max-width: 768px){
+    font-size: 16pt;
+  }
 }
 
 .btn-close {
@@ -138,6 +159,8 @@ export default {
   border-radius: $nadi-button-border-radius !important;
   color: $nadi-red-color;
   border: $nadi-button-border;
+  margin-bottom: 20px;
+  height: 4vh;
   &:hover {
     background: $nadi-red-color !important;
     color: $nadi-white-color !important;

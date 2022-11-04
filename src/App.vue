@@ -33,7 +33,6 @@ export default {
   methods: {
     closeModal() {
       this.isModalVisible = false;
-      this.$store.commit("flipAnnouncementModal")
     },
   },
   metaInfo: {
