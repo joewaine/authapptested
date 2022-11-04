@@ -96,7 +96,7 @@ export default {
 
 .modal-header,
 .modal-footer {
-  padding: 15px;
+  padding: 14px;
   display: flex;
   justify-content: center !important;
   background-color: $nadi-black-color;
