@@ -211,6 +211,7 @@ const vuexLocalStorage = new VuexPersist({
 });
 
 const store = new Vuex.Store({
+  
   plugins: [vuexLocalStorage.plugin],
   state: {
     dashboard: "empty",

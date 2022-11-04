@@ -1,25 +1,39 @@
 <template>
-<div>
-  <Nav3/>
-  <PlasmicRootProvider :loader="this.loader">
-    <!-- Router renders everything here, including Plasmic pages. -->
-    <router-view />
-  </PlasmicRootProvider>
+  <div>
+    <Nav3 />
+    <PlasmicRootProvider :loader="this.loader">
+      <!-- Router renders everything here, including Plasmic pages. -->
+      <AnnouncementBox v-show="isModalVisible" @close="closeModal"/>
+      <router-view />
+    </PlasmicRootProvider>
   </div>
 </template>
 
 <script type="text/javascript">
 import { PlasmicRootProvider } from "@plasmicapp/loader-vue";
 import { PLASMIC } from "./plasmic-init";
-import Nav3 from './components/Nav3.vue'
+import Nav3 from "./components/Nav3.vue";
+import AnnouncementBox from "./components/AnnouncementBox.vue";
 export default {
   components: {
     PlasmicRootProvider,
-    Nav3
+    Nav3,
+    AnnouncementBox,
   },
   computed: {
     loader() {
       return PLASMIC;
+    },
+  },
+  data() {
+    return {
+      isModalVisible: true,
+    };
+  },
+  methods: {
+    closeModal() {
+      this.isModalVisible = false;
+      this.$store.commit("flipAnnouncementModal")
     },
   },
   metaInfo: {
@@ -361,7 +375,6 @@ h4.error {
     overflow: hidden;
   }
 
-
   .filtree-full-testing {
     width: calc(50% - 0px);
     float: left;
@@ -378,8 +391,6 @@ h4.error {
       width: calc(100%);
     }
   }
-
-
 
   .content-box {
     // margin: 10px;
@@ -447,7 +458,6 @@ h4.error {
     font-size: 0.9rem;
     font-weight: 600;
   }
-
 
   .expand-contract {
     display: none;
@@ -644,7 +654,6 @@ h4.error {
     padding-top: 20px;
   }
 
-
   .item-description-p {
     margin-top: 15px;
     margin-bottom: 5px;
@@ -799,8 +808,8 @@ h4.error {
 
         bottom: 10px;
         // transition: all .5s ease;
-    background: transparent;
-    border: 0;
+        background: transparent;
+        border: 0;
         &:focus {
           outline: none;
         }
@@ -861,8 +870,6 @@ h4.error {
     .grey-bg {
       height: 150px;
     }
-
-
   }
 
   input.formatted {
@@ -882,9 +889,6 @@ h4.error {
   ul.no-left-pad {
     padding-left: 0;
   }
-
-
-
 
   .smblk {
     color: #000;
@@ -1232,7 +1236,6 @@ h4.error {
     // display: none !important;
   }
 
-
   #upserveolo .filtree-full-testing {
     height: 140px !important;
   }
@@ -1244,7 +1247,6 @@ h4.error {
 }
 
 @media only screen and (max-width: 992px) {
-
   #upserveolo .filtree-full-testing {
     height: 140px !important;
 
@@ -1408,11 +1410,9 @@ input.custom-tip-button {
 .hide-on-desktop {
   display: none;
   @media only screen and (max-width: 1080px) {
-display: flow-root;
+    display: flow-root;
   }
 }
-
-
 
 @media only screen and (max-width: 992px) {
   #upserveolo .box-inner {
@@ -1448,7 +1448,6 @@ display: flow-root;
 #fine_foods .owl-stage-outer {
   background: #eee;
 }
-
 
 .is-fullheight.less-left-right [id^="carousel_prev_"] {
   left: 30%;
@@ -2029,8 +2028,6 @@ display: flow-root;
   padding: 28px 0;
 }
 
-
-
 .mb20mobile {
 }
 
@@ -2046,7 +2043,6 @@ display: flow-root;
   text-transform: lowercase;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-
 
 .pt140 {
   padding-top: 140px;
