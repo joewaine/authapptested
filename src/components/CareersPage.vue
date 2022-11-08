@@ -21,7 +21,7 @@
     <div>
       <NoOpenings />
     </div>
-    <!-- spot for image -->
+    
     <footer>
       <GlobalFooter />
     </footer>
