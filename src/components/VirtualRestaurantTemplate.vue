@@ -79,6 +79,15 @@
                         >{{ item.header_notification_group.cta_text }}</a
                       >
 
+                      <a
+                        v-if="item.header_notification_group.cta_link_secondary != ''"
+                        class="ctaLink"
+                        target="_blank"
+                        :style="styleObject"
+                        :href="item.header_notification_group.cta_link_secondary"
+                        >{{ item.header_notification_group.cta_text_secondary }}</a
+                      >
+
                       <div class="ctaDiv"></div>
                     </div>
                   </div>
