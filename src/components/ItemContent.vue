@@ -22,7 +22,7 @@
         <div class="food-price">
           <!-- ${{ serve.price_cents.toFixed(2)/100}}<span class="checkIfPackage" v-html="checkIfPackage(serve.id)"></span>  -->
 
-          <!-- <br> -->
+          
 
           ${{ formatPrice(serve.price_cents) }}
           <template v-if="checkIfPackage(serve.id)">
