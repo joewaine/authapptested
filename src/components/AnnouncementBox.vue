@@ -5,8 +5,11 @@ export default {
     close() {
       this.$emit("close");
     },
-    goToTock() {
+    goToTockMamnoon() {
       window.location.href = "https://www.exploretock.com/mamnoonrestaurant/";
+    },
+    goToTockHanoon() {
+      window.location.href = "https://www.exploretock.com/mamnoonstreet";
     },
   },
 };
@@ -36,19 +39,37 @@ export default {
         <section class="modalBody" id="modalDescription">
           <slot name="body">
             the mama thanksgiving package is here! you handle the turkey and let
-            mamnoon take care of the rest!
+            mama take care of the rest!
           </slot>
         </section>
 
         <footer class="modal-footer">
+          <div class="buttonBox">
+            <div class="leftBox">
+          <span>hanoon</span>
+          <span>&#40;totem lake&#41;</span>
           <button
             type="button"
             class="btn-green"
-            @click="goToTock"
+            @click="goToTockHanoon"
             aria-label="Go to tock"
           >
             order now
           </button>
+          </div>
+          <div class="rightBox">
+          <span>mamnoon</span>
+          <span>&#40;capitol hill&#41;</span>
+          <button
+            type="button"
+            class="btn-green"
+            @click="goToTockMamnoon"
+            aria-label="Go to tock"
+          >
+            order now
+          </button>
+          </div>
+        </div>
         </footer>
       </div>
     </div>
@@ -66,6 +87,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .modalAnnounce {
@@ -73,6 +95,7 @@ export default {
   // position: absolute;
   height: 350px !important;
   width: 30% !important;
+  overflow: hidden !important;
   overflow-x: auto;
   display: flex !important;
   flex-direction: column;
@@ -102,6 +125,25 @@ export default {
   background-color: $nadi-black-color;
   border: none !important;
 
+}
+
+.buttonBox {
+  display: flex;
+  width: 100%; 
+  justify-content: space-around;
+  align-items: center;
+}
+.buttonBox span {
+  color: $nadi-red-color;
+  font-size: 12pt;
+  font-weight: 700;
+  display: block;
+  height: 30px;
+
+}
+.rightBox {
+  float: right;
+  max-height: 200px;
 }
 
 .modal-header {
