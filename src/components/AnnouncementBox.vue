@@ -5,9 +5,11 @@ export default {
     close() {
       this.$emit("close");
     },
+
     goToTockMamnoon() {
       window.location.href = "https://www.exploretock.com/mamnoonrestaurant/";
     },
+    
     goToTockHanoon() {
       window.location.href = "https://www.exploretock.com/mamnoonstreet";
     },
