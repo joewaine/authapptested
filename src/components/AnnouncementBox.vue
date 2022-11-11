@@ -99,8 +99,10 @@ export default {
   width: 30% !important;
   overflow: hidden !important;
   overflow-x: auto;
+  border-radius: 2px 2px 2px 2px;
   display: flex !important;
   flex-direction: column;
+  box-shadow:  3px 3px 5px #ffffff;
   margin: auto;
   top: 0;
   @media only screen and (max-width: 1323px) {
