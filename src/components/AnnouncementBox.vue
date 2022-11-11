@@ -102,7 +102,7 @@ export default {
   border-radius: 2px 2px 2px 2px;
   display: flex !important;
   flex-direction: column;
-  box-shadow:  3px 3px 5px #ffffff;
+ box-shadow: 0 4px 4px white;
   margin: auto;
   top: 0;
   @media only screen and (max-width: 1323px) {
