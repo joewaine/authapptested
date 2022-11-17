@@ -128,7 +128,6 @@ export default {
   justify-content: center !important;
   background-color: $nadi-black-color;
   border: none !important;
-
 }
 
 .buttonBox {
