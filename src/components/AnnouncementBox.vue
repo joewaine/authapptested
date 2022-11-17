@@ -102,7 +102,7 @@ export default {
   border-radius: 2px 2px 2px 2px;
   display: flex !important;
   flex-direction: column;
- box-shadow: 0 4px 4px white;
+ box-shadow: 0 0 4px 4px white;
   margin: auto;
   top: 0;
   @media only screen and (max-width: 1323px) {
@@ -134,7 +134,7 @@ export default {
 .buttonBox {
   display: flex;
   width: 100%; 
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .buttonBox span {
@@ -143,8 +143,13 @@ export default {
   font-weight: 700;
   display: block;
   height: 30px;
-
+  
 }
+
+.buttonBox span:nth-child(odd){
+  margin-bottom: -8px;
+}
+
 .rightBox {
   float: right;
   max-height: 200px;
