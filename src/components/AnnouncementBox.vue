@@ -142,7 +142,6 @@ export default {
   font-weight: 700;
   display: block;
   height: 30px;
-  
 }
 
 .buttonBox span:nth-child(odd){
