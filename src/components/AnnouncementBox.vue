@@ -37,13 +37,14 @@ export default {
         <section class="modalBody" id="modalDescription">
           <slot name="body">
             thanksgiving sides are still available for purchase at manna through
-            the 23rd. <span>looking for heating instructions?</span>
+            the 23rd. 
           </slot>
         </section>
 
         <footer class="modal-footer">
           <div class="buttonBox">
             <div class="leftBox">
+              <span>looking for heating instructions?</span>
               <button
                 type="button"
                 class="btn-green"
@@ -115,18 +116,17 @@ export default {
 .buttonBox {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
+
 .buttonBox span {
   color: $nadi-red-color;
   font-size: 12pt;
   font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
   height: 30px;
-}
-
-.buttonBox span:nth-child(odd) {
-  margin-bottom: -8px;
 }
 
 .rightBox {
@@ -171,9 +171,6 @@ export default {
   }
 }
 
-.modalBody span {
-  color: $nadi-red-color;
-}
 
 .btn-close {
   position: absolute;
@@ -195,6 +192,7 @@ export default {
   border: $nadi-button-border;
   margin-bottom: 20px;
   height: 4vh;
+  margin-left: 30%;
   &:hover {
     background: $nadi-red-color !important;
     color: $nadi-white-color !important;
