@@ -6,13 +6,11 @@ export default {
       this.$emit("close");
     },
 
-    goToTockMamnoon() {
-      window.location.href = "https://www.exploretock.com/mamnoonrestaurant/";
+    goToHeating() {
+      window.location.href = "https://uqr.to/19tkz";
     },
     
-    goToTockHanoon() {
-      window.location.href = "https://www.exploretock.com/mamnoonstreet";
-    },
+   
   },
 };
 </script>
@@ -40,37 +38,24 @@ export default {
 
         <section class="modalBody" id="modalDescription">
           <slot name="body">
-            the mama thanksgiving package is here! you handle the turkey and let
-            mama take care of the rest!
+            thanksgiving sides are still available for purchase at manna through the 23rd.
+looking for heating instructions?
           </slot>
         </section>
 
         <footer class="modal-footer">
           <div class="buttonBox">
             <div class="leftBox">
-          <span>hanoon</span>
-          <span>&#40;totem lake&#41;</span>
           <button
             type="button"
             class="btn-green"
-            @click="goToTockHanoon"
+            @click="goToHeating"
             aria-label="Go to tock"
           >
-            order now
+            click here
           </button>
           </div>
-          <div class="rightBox">
-          <span>mamnoon</span>
-          <span>&#40;capitol hill&#41;</span>
-          <button
-            type="button"
-            class="btn-green"
-            @click="goToTockMamnoon"
-            aria-label="Go to tock"
-          >
-            order now
-          </button>
-          </div>
+
         </div>
         </footer>
       </div>
