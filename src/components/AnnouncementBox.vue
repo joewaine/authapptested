@@ -173,7 +173,6 @@ export default {
 
 .modalBody span {
   color: $nadi-red-color;
-  
 }
 
 .btn-close {
