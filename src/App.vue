@@ -173,15 +173,6 @@ h4.error {
   //   border: 1px solid #f58e58;
   //   background-color: $nadi-red-color;
 
-  //   color: #ffffff;
-  //   padding: 5px 10px;
-  //   border-radius: 4px;
-  //   // border: 2px solid $nadi-red-color !important;
-  //   // border: 2px solid #f58e58 !important;
-  //   border: 2px solid transparent;
-
-  //   //border: 2px solid $nadi-red-color;
-
   //   &.deactivated {
   //     border: 2px solid #999999 !important;
   //   }
