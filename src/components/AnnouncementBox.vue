@@ -9,8 +9,6 @@ export default {
     goToHeating() {
       window.location.href = "https://uqr.to/19tkz";
     },
-    
-   
   },
 };
 </script>
@@ -38,25 +36,24 @@ export default {
 
         <section class="modalBody" id="modalDescription">
           <slot name="body">
-            thanksgiving sides are still available for purchase at manna through the 23rd.
-looking for heating instructions?
+            thanksgiving sides are still available for purchase at manna through
+            the 23rd. <span>looking for heating instructions?</span>
           </slot>
         </section>
 
         <footer class="modal-footer">
           <div class="buttonBox">
             <div class="leftBox">
-          <button
-            type="button"
-            class="btn-green"
-            @click="goToHeating"
-            aria-label="Go to tock"
-          >
-            click here
-          </button>
+              <button
+                type="button"
+                class="btn-green"
+                @click="goToHeating"
+                aria-label="Go to tock"
+              >
+                click here
+              </button>
+            </div>
           </div>
-
-        </div>
         </footer>
       </div>
     </div>
@@ -87,7 +84,7 @@ looking for heating instructions?
   border-radius: 2px 2px 2px 2px;
   display: flex !important;
   flex-direction: column;
- box-shadow: 0 0 4px 4px white;
+  box-shadow: 0 0 4px 4px white;
   margin: auto;
   top: 0;
   @media only screen and (max-width: 1323px) {
@@ -117,7 +114,7 @@ looking for heating instructions?
 
 .buttonBox {
   display: flex;
-  width: 100%; 
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -125,11 +122,10 @@ looking for heating instructions?
   color: $nadi-red-color;
   font-size: 12pt;
   font-weight: 700;
-  display: block;
   height: 30px;
 }
 
-.buttonBox span:nth-child(odd){
+.buttonBox span:nth-child(odd) {
   margin-bottom: -8px;
 }
 
@@ -147,7 +143,7 @@ looking for heating instructions?
   font-size: 22pt;
   font-weight: 800;
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     font-size: 18pt;
   }
 }
@@ -164,15 +160,20 @@ looking for heating instructions?
   background-color: $nadi-black-color;
   color: white;
   height: 100%;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   font-size: 19pt;
   text-align: left;
   box-sizing: border-box;
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     font-size: 16pt;
   }
+}
+
+.modalBody span {
+  color: $nadi-red-color;
+  
 }
 
 .btn-close {
