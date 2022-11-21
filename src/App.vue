@@ -120,7 +120,6 @@ h4.error {
   color: white;
   border-radius: 4px;
   margin: 0 10px 0 0;
-
   &:hover {
     color: #fff367;
   }
