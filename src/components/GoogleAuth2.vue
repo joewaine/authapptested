@@ -6,8 +6,6 @@
 <NavBar />
 
 
-
-
 <div>
       <!-- v-if="!isSignIn" -->
 <a class="hide-on-desktop"
