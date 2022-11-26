@@ -49,7 +49,6 @@ props: ['emailAddress'],
                this.ccBillingAddress = null
                this.ccBillingName = null
                 this.showAddCardFormVisible = false
-
       }else{
     this.sendApprovalDataToMongo(email, approvalData)
       }
