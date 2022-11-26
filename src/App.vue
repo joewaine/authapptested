@@ -3,7 +3,7 @@
     <Nav3 />
     <PlasmicRootProvider :loader="this.loader">
       <!-- Router renders everything here, including Plasmic pages. -->
-      <AnnouncementBox v-show="isModalVisible" @close="closeModal"/>
+      <!-- <AnnouncementBox v-show="isModalVisible" @close="closeModal"/> -->
       <router-view />
     </PlasmicRootProvider>
   </div>
