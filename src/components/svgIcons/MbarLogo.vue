@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="modularSvg mbarModularSvg"
+    class="modularMbarSvg mbarModularSvg"
     :style="styleObject"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 228.5 109"
@@ -92,13 +92,15 @@ export default {
   data() {
     return {};
   },
-  props: ["fill", "height", "marginLeft", "marginRight"],
+  props: ["fill", "height", "marginLeft", "marginRight", "marginTop", "marginBottom"],
   computed: {
     styleObject() {
       return {
         "--height": this.height + "px",
         "--margin-left": this.marginLeft + "px",
         "--margin-right": this.marginRight + "px",
+        "--margin-bottom": this.marginBottom + "px",
+        "--margin-top": this.marginTop + "px",
       };
     },
   },
@@ -110,6 +112,8 @@ export default {
   height: calc(var(--height) / 1);
   margin-left: var(--margin-left);
   margin-right: var(--margin-right);
+  margin-bottom: var(--margin-bottom);
+  margin-top: var(--margin-top);
 
   @media only screen and (max-width: 1080px) {
     margin-left: 20px;
@@ -119,6 +123,15 @@ export default {
   @media only screen and (max-width: 640px) {
     height: calc(var(--height) / 1.75);
     height: 6vh;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .modularMbarSvg {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+    margin: -50px auto 0px !important;
+    height: 80px;
   }
 }
 </style>

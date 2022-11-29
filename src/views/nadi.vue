@@ -101,16 +101,7 @@
                   />
                 </router-link>
               </div>
-              <div class="displayInline">
-                <router-link :to="'mbar'"
-                  ><MbarLogo
-                    :height="70"
-                    :marginLeft="20"
-                    :marginRight="20"
-                    :fill="'white'"
-                  />
-                </router-link>
-              </div>
+              
               <div class="displayInline">
                 <router-link :to="'mamnoonstreet'"
                   ><StreetLogo
@@ -122,11 +113,48 @@
                 </router-link>
               </div>
               <div class="displayInline">
-                <router-link :to="'anar'"
-                  ><AnarLogo
+                <!-- <router-link :to="''" -->
+                  <StreetEatsLogo
                     :height="70"
-                    :marginLeft="20"
+                    :marginLeft="0"
+                    :marginRight="20"
+                    :fill="'white'"
+                  />
+                <!-- </router-link> -->
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="logosInline">
+              <div class="displayInline">
+                <router-link :to="'hanoon'"
+                  ><HanoonHomeLogo
+                    :height="90"
                     :marginRight="0"
+                    :marginLeft="20"
+                    :fill="'white'"
+                  />
+                </router-link>
+              </div>
+              
+              <div class="displayInline">
+                <router-link :to="'manna'"
+                  ><MannaLogo
+                    :height="120"
+                    :marginTop="50"
+                    :marginLeft="90"
+                    :marginRight="20"
+                    :fill="'white'"
+                  />
+                </router-link>
+              </div>
+              <div class="displayInline">
+                <router-link :to="'mbar'"
+                  ><MbarLogo
+                    :height="70"
+                    :marginLeft="10"
+                    :marginRight="20"
+                    :marginBottom="22"
                     :fill="'white'"
                   />
                 </router-link>
@@ -208,11 +236,12 @@
 import Nav3 from "@/components/Nav3";
 
 import VideoComponent2 from "@/components/VideoComponent2";
-
+import MannaLogo from "@/components/svgIcons/MannaLogo";
 import MbarLogo from "@/components/svgIcons/MbarLogo";
-import AnarLogo from "@/components/svgIcons/AnarLogo";
+import StreetEatsLogo from "@/components/svgIcons/StreetEatsLogo";
 import StreetLogo from "@/components/svgIcons/StreetLogo";
 import MamnoonLogo from "@/components/svgIcons/MamnoonLogo";
+import HanoonHomeLogo from "@/components/svgIcons/HanoonHomeLogo";
 import DownArrow from "@/components/svgIcons/DownArrow";
 
 import GlobalFooter from "@/components/GlobalFooter";
@@ -257,9 +286,11 @@ export default {
     Nav3,
     VideoComponent2,
     MbarLogo,
-    AnarLogo,
+    StreetEatsLogo,
     StreetLogo,
     MamnoonLogo,
+    HanoonHomeLogo,
+    MannaLogo,
     GlobalFooter,
   },
   methods: {
