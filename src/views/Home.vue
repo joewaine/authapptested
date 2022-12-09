@@ -141,9 +141,7 @@ export default {
         // console.log(this.currentIndex)
       }
     },
-    // randomIndex: function () {
-    //   return Math.floor(Math.random() * this.items.length)
-    // },
+    
     // add: function () {
     //   this.items.splice(this.randomIndex(), 0, this.nextNum++)
     // },
