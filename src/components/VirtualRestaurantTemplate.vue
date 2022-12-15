@@ -732,6 +732,42 @@
               }"
             ></section>
           </template>
+          <template v-if="item.full_width_two">
+            <section
+              class="secPad fh full-width-background"
+              v-bind:style="{
+                'background-size': 'cover',
+                'background-image': 'url(' + item.full_width_two + ')',
+              }"
+            ></section>
+          </template>
+          <template v-if="item.full_width_three">
+            <section
+              class="secPad fh full-width-background"
+              v-bind:style="{
+                'background-size': 'cover',
+                'background-image': 'url(' + item.full_width_three + ')',
+              }"
+            ></section>
+          </template>
+          <template v-if="item.full_width_four">
+            <section
+              class="secPad fh full-width-background"
+              v-bind:style="{
+                'background-size': 'cover',
+                'background-image': 'url(' + item.full_width_four + ')',
+              }"
+            ></section>
+          </template>
+          <template v-if="item.full_width_five">
+            <section
+              class="secPad fh full-width-background"
+              v-bind:style="{
+                'background-size': 'cover',
+                'background-image': 'url(' + item.full_width_five + ')',
+              }"
+            ></section>
+          </template>
 
           <!--end full width image-->
         </template>
