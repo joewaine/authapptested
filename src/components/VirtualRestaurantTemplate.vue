@@ -64,8 +64,6 @@
               <!--begin row-->
               <div class="row">
                 <div class="col-md-6 offset-md-3 col-10 offset-1">
-
-
                   <div class="header-notification-wrapper">
                     <div class="header-notification-text">
                       {{ item.header_notification_group.text }}<br />
