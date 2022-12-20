@@ -29,6 +29,7 @@
                 item.header_notification_group.text != ''
             "
             class="header-notification"
+            
             v-bind:style="{
               'background-color': item.header_notification_background_color,
               color: item.header_notification_text_color,
@@ -73,6 +74,7 @@
                       <a
                         v-if="item.header_notification_group.cta_link != ''"
                         class="ctaLink"
+                        :id="name + '_' + item.header_notification_group.cta_text + '_restaurantAnnouncementBar_restaurantPage'"
                         target="_blank"
                         :style="styleObject"
                         :href="item.header_notification_group.cta_link"
@@ -82,6 +84,7 @@
                       <a
                         v-if="item.header_notification_group.cta_link_secondary != ''"
                         class="ctaLink"
+                        :id="name + '_' + item.header_notification_group.cta_text + '_restaurantAnnouncementBar_restaurantPage'"
                         target="_blank"
                         :style="styleObject"
                         :href="item.header_notification_group.cta_link_secondary"
