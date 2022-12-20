@@ -149,6 +149,7 @@
                         target="_blank"
                         :style="styleObject"
                         :href="button.link"
+                        :id="button.text + '_' + name + '_restaurantPage'"
                         >{{ button.text }}</a
                       >
                     </template>
@@ -944,6 +945,12 @@ export default {
   },
   props: ["apiData", "blok"],
   methods: {
+
+    // getLinkId(){
+    //   this.restaurantName = this.$route.params.id;
+
+    // },
+
     getTimeStamp(date) {
       if (date === null) {
         return true;

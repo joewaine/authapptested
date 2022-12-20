@@ -164,7 +164,7 @@
 
                     <div class="bottomLinks">
                       <template v-for="link in restaurant.tile_bottom_buttons">
-                        <a class="bottomButton" :href="link.link">{{
+                        <a class="bottomButton" :id="link.title + '_' + restaurant.name.replace(' ', '') + '_ourRestaurantsCard'" :href="link.link" >{{
                           link.title
                         }}</a>
                       </template>
