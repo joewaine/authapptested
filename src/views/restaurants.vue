@@ -174,7 +174,6 @@
 
                 <!--<pre>
 {{restaurant}}
-
 </pre>-->
               </div>
             </div>
