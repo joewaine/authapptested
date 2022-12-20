@@ -67,8 +67,6 @@
 
 
                   <div class="header-notification-wrapper">
-       
-
                     <div class="header-notification-text">
                       {{ item.header_notification_group.text }}<br />
                       <a
