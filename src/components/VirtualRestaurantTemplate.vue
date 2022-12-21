@@ -86,7 +86,6 @@
                         :href="item.header_notification_group.cta_link_secondary"
                         >{{ item.header_notification_group.cta_text_secondary }}</a
                       >
-
                       <div class="ctaDiv"></div>
                     </div>
                   </div>
@@ -97,8 +96,6 @@
         </template>
 
         <!--end notification group section-->
-
-
 
         <template v-if="item.name.replace(' ', '') === restaurantName">
           <section
