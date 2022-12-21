@@ -80,7 +80,7 @@
                       <a
                         v-if="item.header_notification_group.cta_link_secondary != ''"
                         class="ctaLink"
-                        :id="name + '_' + item.header_notification_group.cta_text + '_restaurantAnnouncementBar_restaurantPage'"
+                        :id="name + '_' + item.header_notification_group.cta_text_secondary + '_restaurantAnnouncementBar_restaurantPage'"
                         target="_blank"
                         :style="styleObject"
                         :href="item.header_notification_group.cta_link_secondary"
