@@ -728,6 +728,10 @@
                 'background-image': 'url(' + item.full_width + ')',
               }"
             ></section>
+            <!-- <img class="secPad fh full-width-background" v-bind:style="{
+                'background-size': 'cover',
+                'background-image': 'url(' + item.full_width + ')',
+              }"/> -->
           </template>
           <template v-if="item.full_width_two">
             <section
