@@ -772,6 +772,9 @@ a.ctaLinkOpposite {
     // min-height: 500px;
     zoom: 22%;
   }
+  @media only screen and (max-width: 500px){
+    zoom: 20%;
+  }
 }
 
 // .restaurantLogo {
