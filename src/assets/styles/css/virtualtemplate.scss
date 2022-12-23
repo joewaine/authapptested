@@ -767,14 +767,12 @@ a.ctaLinkOpposite {
 .full-width-background {
   height: 100vh;
   zoom: 70%;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) and (min-width: 200px){
     // height: 500px;
     // min-height: 500px;
     zoom: 22%;
   }
-  @media only screen and (max-width: 500px){
-    zoom: 20%;
-  }
+  
 }
 
 // .restaurantLogo {
