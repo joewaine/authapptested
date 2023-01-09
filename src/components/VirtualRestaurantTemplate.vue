@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav3 />
-
+    <!-- <PlasmicEvents eventsLocation = restaurantName /> -->
     <div
       v-if="
         this.$store.state.pageData[0].restaurant_repeater
@@ -800,14 +800,14 @@ import Heart from "@/components/svgIcons/Heart";
 import Envelope from "@/components/svgIcons/Envelope";
 
 import VideoComponent from "@/components/VideoComponent";
-
+import PlasmicEvents from "@/components/PlasmicEvents"
 import GlobalFooter from "@/components/GlobalFooter";
 import moment from "moment";
 import tz from "moment-timezone";
 
 export default {
   components: {
-
+    PlasmicEvents,
     Nav3,
     Phone,
     Clock,

@@ -1,7 +1,7 @@
 <template>
   <div class="nadi">
     <Nav3 />
-
+    <!-- <PlasmicEvents /> -->
     <div
       class="announcementBar"
       v-if="
@@ -113,14 +113,14 @@
                 </router-link>
               </div>
               <div class="displayInline">
-                <!-- <router-link :to="''" -->
+                <router-link :to="'streeteats'">
                   <StreetEatsLogo
                     :height="70"
                     :marginLeft="0"
                     :marginRight="20"
                     :fill="'white'"
                   />
-                <!-- </router-link> -->
+                </router-link>
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@ import StreetLogo from "@/components/svgIcons/StreetLogo";
 import MamnoonLogo from "@/components/svgIcons/MamnoonLogo";
 import HanoonHomeLogo from "@/components/svgIcons/HanoonHomeLogo";
 import DownArrow from "@/components/svgIcons/DownArrow";
-
+import PlasmicEvents from "@/components/PlasmicEvents"
 import GlobalFooter from "@/components/GlobalFooter";
 
 import moment from "moment";
@@ -290,6 +290,7 @@ export default {
     StreetLogo,
     MamnoonLogo,
     HanoonHomeLogo,
+    PlasmicEvents,
     MannaLogo,
     GlobalFooter,
   },
