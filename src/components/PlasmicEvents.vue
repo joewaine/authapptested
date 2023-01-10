@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <PlasmicRootProvider :loader="this.loader">
+    <!-- <PlasmicRootProvider :loader="this.loader"> -->
       <PlasmicComponent component="Events" />
-    </PlasmicRootProvider>
+    <!-- </PlasmicRootProvider> -->
   </div>
 </template>
 
