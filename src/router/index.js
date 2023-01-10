@@ -194,6 +194,11 @@ const routes = [
     component: () => import("../views/menus.vue")
   },
   {
+    path: "/plasmic-test-events",
+    name: "events",
+    component: () => import("../views/plasmicEvent.vue")
+  },
+  {
     path: "/profile",
     name: "profile",
     component: () => import("../views/profile.vue"),
