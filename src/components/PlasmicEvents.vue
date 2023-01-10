@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <PlasmicRootProvider :loader="this.loader">
-      <PlasmicComponent component="Events" componentProps="eventLocation" />
+      <PlasmicComponent component="Events" />
     </PlasmicRootProvider>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
     PlasmicRootProvider,
     PlasmicComponent,
   },
-  props: ["eventLocation"],
+  
   computed: {
     loader() {
       return PLASMIC;

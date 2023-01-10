@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <Events />
   </div>
 </template>
@@ -9,7 +8,6 @@
 import Events from '@/components/PlasmicEvents';
 export default {
   components: {
-    
     Events
   }
 };
