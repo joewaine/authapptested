@@ -81,6 +81,10 @@ body {
   supported by Chrome, Edge, Opera and Firefox */
 }
 
+h6 {
+  margin-bottom: 0 !important;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.25s;
