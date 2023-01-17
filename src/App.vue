@@ -1968,6 +1968,7 @@ input.custom-tip-button {
   #nadiWhiteMob,
   #nadiMob {
     display: block;
+    margin-left: 215px;
   }
 
   #nadiWhiteDesk,
