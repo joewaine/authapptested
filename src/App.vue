@@ -1968,7 +1968,19 @@ input.custom-tip-button {
   #nadiWhiteMob,
   #nadiMob {
     display: block;
-    margin-left: 215px;
+    margin-left: 210px;
+  }
+
+  #nadiWhiteDesk,
+  #nadiDesk {
+    display: none;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1080px) {
+  #nadiWhiteMob,
+  #nadiMob {
+    display: block;
+    margin-left: 185px;
   }
 
   #nadiWhiteDesk,
