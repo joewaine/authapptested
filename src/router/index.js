@@ -193,11 +193,11 @@ const routes = [
     name: "menus",
     component: () => import("../views/menus.vue")
   },
-  {
-    path: "/plasmic-test-events",
-    name: "events",
-    component: () => import("../components/PlasmicEvents.vue")
-  },
+  // {
+  //   path: "/plasmic-test-events",
+  //   name: "events",
+  //   component: () => import("../components/PlasmicEvents.vue")
+  // },
   {
     path: "/",
     name: "new-home",
