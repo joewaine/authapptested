@@ -1,8 +1,9 @@
 <template>
   <div class="nadi">
     <Nav3 />
+    <NewHome/>
     <!-- <PlasmicEvents /> -->
-    <div
+    <!-- <div
       class="announcementBar"
       v-if="
         getTimeStamp(notificationHeader.expiration) &&
@@ -71,10 +72,10 @@
         height: '100vh',
         'background-size': 'cover',
       }"
-    >
+    > -->
       <!--<div class="container mobilePage pt132">-->
 
-      <div class="bottomAttach header black secPadMedAlt">
+      <!-- <div class="bottomAttach header black secPadMedAlt">
         <img
           src="http://mamnoontogo.net/wp-content/uploads/2022/05/MStreet-Environment-9131-scaled-2.jpeg"
           class="responsiveBannerImage"
@@ -165,11 +166,11 @@
             <DownArrow />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!--<br>-->
       <!-- </div>-->
-    </section>
+    <!-- </section> -->
 
     <!--sub module loop-->
     <!--sub module loop-->
@@ -177,7 +178,7 @@
     <!--sub module loop-->
     <!--sub module loop-->
 
-    <template v-for="mod in subModules">
+    <!-- <template v-for="mod in subModules">
       <section
         v-if="getTimeStamp(mod.date_range_end)"
         class="topSection fh moduleStyling"
@@ -220,7 +221,7 @@
           </div>
         </div>
       </section>
-    </template>
+    </template> -->
 
     <!--sub module loop-->
     <!--sub module loop-->
@@ -234,7 +235,7 @@
 </template>
 <script>
 import Nav3 from "@/components/Nav3";
-
+import NewHome from "@/components/NewHome"
 import VideoComponent2 from "@/components/VideoComponent2";
 import MannaLogo from "@/components/svgIcons/MannaLogo";
 import MbarLogo from "@/components/svgIcons/MbarLogo";
@@ -286,6 +287,7 @@ export default {
     Nav3,
     VideoComponent2,
     MbarLogo,
+    NewHome,
     StreetEatsLogo,
     StreetLogo,
     MamnoonLogo,

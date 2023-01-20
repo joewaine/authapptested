@@ -43,11 +43,11 @@ const CatchAllPage = {
 };
 
 const routes = [
-  // {
-  //   path: "/",
-  //   name: "nadi",
-  //   component: () => import("../views/nadi.vue"),
-  // },
+  {
+    path: "/",
+    name: "nadi",
+    component: () => import("../views/nadi.vue"),
+  },
   {
     path: "/mamnoonff",
     name: "mamnoonff",
@@ -198,11 +198,11 @@ const routes = [
   //   name: "events",
   //   component: () => import("../components/PlasmicEvents.vue")
   // },
-  {
-    path: "/",
-    name: "new-home",
-    component: () => import("../components/NewHome.vue")
-  },
+  // {
+  //   path: "/",
+  //   name: "new-home",
+  //   component: () => import("../components/NewHome.vue")
+  // },
   {
     path: "/profile",
     name: "profile",
