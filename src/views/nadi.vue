@@ -229,7 +229,7 @@
     <!--sub module loop-->
     <!--sub module loop-->
 
-    <GlobalFooter />
+    <!-- <GlobalFooter /> -->
     <!-- {{$store.state.currentUserEmail}} -->
   </div>
 </template>
