@@ -63,6 +63,7 @@ export default {
 html,
 body {
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 #preview-coverflow,
