@@ -220,7 +220,15 @@
                 >
               </li>
             </div>
-
+            <div class="inline-link">
+              <li>
+                <router-link
+                  to="/finefoods"
+                  class="scrollactive-item nav-item"
+                  >fine foods</router-link
+                >
+              </li>
+            </div>
             <template v-for="item in pageData">
               <div
                 class="inline-link"
@@ -310,7 +318,15 @@
                   about
                 </router-link>
               </li>
-
+               
+              <li>
+                <router-link
+                  to="/finefoods"
+                  class="scrollactive-item nav-item"
+                  >fine foods</router-link
+                >
+              </li>
+            
               <!-- <li>
                 <router-link to="/newsletterarchive">
                   newsletter archive
