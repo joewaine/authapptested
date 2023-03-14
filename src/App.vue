@@ -40,7 +40,7 @@ export default {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: "nadi mama",
     // all titles will be injected into this template
-    titleTemplate: "%s | mamnoon | mbar | mamnoon street | anar",
+    titleTemplate: "%s | mamnoon | mbar | mamnoon street | street eats | hanoon",
     meta: [
       {
         name: "Nadi Mama",
